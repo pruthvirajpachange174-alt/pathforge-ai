@@ -1,0 +1,57 @@
+[
+  {
+    "name":"Python","slug":"python",
+    "usedFor":["AI","ML","Data Science","Backend","Automation","Scripting"],
+    "companies":["Google","Meta","Netflix","Instagram","Spotify","NASA"],
+    "pros":["Simple syntax","Huge library ecosystem","Best for AI/ML","Great community"],
+    "cons":["Slower than compiled languages","GIL limits threading","Not great for mobile"],
+    "beginnerFriendly":10,"demand":10,
+    "futureScope":"Dominant in AI, data, scientific computing. Will remain #1 for the next decade.",
+    "exampleProjects":["ML model on Kaggle","Django blog","Discord bot","Data dashboard with Streamlit"],
+    "color":"#3776ab"
+  },
+  {
+    "name":"JavaScript","slug":"javascript",
+    "usedFor":["Frontend","Backend (Node.js)","Full Stack","Mobile (React Native)"],
+    "companies":["Netflix","Airbnb","Facebook","PayPal","LinkedIn"],
+    "pros":["Runs everywhere","Huge ecosystem","Full-stack potential"],
+    "cons":["Weak typing","Callback complexity"],
+    "beginnerFriendly":8,"demand":10,
+    "futureScope":"Ubiquitous for web; TypeScript adoption growing rapidly.",
+    "exampleProjects":["React portfolio","MERN chat app","Chrome extension"],
+    "color":"#f7df1e"
+  },
+  {
+    "name":"Java","slug":"java",
+    "usedFor":["Enterprise","Android","Banking","Backend"],
+    "companies":["Oracle","Amazon","Netflix","LinkedIn","Uber","Goldman Sachs"],
+    "pros":["Platform independent","Mature ecosystem","Strong typing","Enterprise standard"],
+    "cons":["Verbose","Slow startup","Memory heavy"],
+    "beginnerFriendly":7,"demand":9,
+    "futureScope":"Backbone of enterprise & Android; Spring Boot demand very high in India.",
+    "exampleProjects":["Spring Boot REST API","Android app","Banking system simulator"],
+    "color":"#f89820"
+  },
+  {
+    "name":"Go","slug":"go",
+    "usedFor":["Cloud","Microservices","DevOps tools","Distributed systems"],
+    "companies":["Google","Uber","Dropbox","Cloudflare","Docker","Kubernetes"],
+    "pros":["Fast","Simple","Great concurrency","Compiled"],
+    "cons":["Less mature libraries in some domains","No generics until recently"],
+    "beginnerFriendly":7,"demand":9,
+    "futureScope":"Rising fast for cloud-native & backend microservices.",
+    "exampleProjects":["REST API","CLI tool","Kubernetes operator"],
+    "color":"#00add8"
+  },
+  {
+    "name":"Rust","slug":"rust",
+    "usedFor":["Systems","OS","Blockchain","Security","WASM"],
+    "companies":["Microsoft","AWS","Discord","Cloudflare","Meta"],
+    "pros":["Memory safety without GC","Blazing fast","Concurrency"],
+    "cons":["Steep learning curve","Longer compile times"],
+    "beginnerFriendly":4,"demand":8,
+    "futureScope":"Replacing C++ in critical systems. Loved by developers 8 years running.",
+    "exampleProjects":["Blockchain node","OS kernel module","Web server with Axum"],
+    "color":"#dea584"
+  }
+]

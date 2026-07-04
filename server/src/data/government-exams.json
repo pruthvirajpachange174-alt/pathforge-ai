@@ -1,0 +1,53 @@
+[
+  {
+    "name": "GATE",
+    "slug": "gate",
+    "category": "Higher Education",
+    "whoShouldTake": "Engineering students aiming for M.Tech at IITs/NITs, PSU jobs, research careers.",
+    "eligibility": "Final year or completed B.E./B.Tech/M.Sc",
+    "syllabus": {
+      "CS": ["DSA","OS","DBMS","Networks","TOC","Compiler","Discrete Math","Aptitude"],
+      "ECE": ["Signals","Networks","EDC","Analog","Digital","Communication","EMT"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "M.Tech admissions, PSU jobs (IOCL, BHEL, NTPC), foreign university applications, research fellowships.",
+    "officialUrl": "https://gate.iitk.ac.in",
+    "tags": ["higher-ed","psu","research"]
+  },
+  {
+    "name": "CAT",
+    "slug": "cat",
+    "category": "Higher Education",
+    "whoShouldTake": "Engineers seeking MBA at IIMs.",
+    "eligibility": "Bachelor's with 50%+ (45% for reserved)",
+    "syllabus": {"sections":["VARC","DILR","QA"]},
+    "difficulty":"Hard",
+    "opportunities":"MBA at IIMs, FMS, MDI, XLRI, SPJIMR — leads to consulting/product management roles.",
+    "officialUrl":"https://iimcat.ac.in",
+    "tags":["mba","management"]
+  },
+  {
+    "name": "GRE",
+    "slug": "gre",
+    "category": "Higher Education",
+    "whoShouldTake": "Students planning MS abroad (US, Germany, Singapore).",
+    "eligibility":"No strict eligibility",
+    "syllabus":{"sections":["Verbal","Quant","AWA"]},
+    "difficulty":"Medium",
+    "opportunities":"MS/PhD in USA, Canada, Europe. Preferred by Stanford, CMU, Georgia Tech.",
+    "officialUrl":"https://ets.org/gre",
+    "tags":["ms-abroad","higher-ed"]
+  },
+  {
+    "name": "ISRO Scientist",
+    "slug": "isro",
+    "category": "Government",
+    "whoShouldTake":"Engineers passionate about space & aerospace research.",
+    "eligibility":"B.E./B.Tech with 65%/6.84 CGPA in CS/ECE/Mech/EEE",
+    "syllabus":{"topics":["Core subjects of your branch","Aptitude"]},
+    "difficulty":"Hard",
+    "opportunities":"Scientist/Engineer 'SC' role at ISRO centres; work on satellites, rockets, launch vehicles.",
+    "officialUrl":"https://isro.gov.in/Careers.html",
+    "tags":["research","government","aerospace"]
+  }
+]

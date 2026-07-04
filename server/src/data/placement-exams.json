@@ -1,0 +1,117 @@
+[
+  {
+    "company": "TCS",
+    "slug": "tcs-nqt",
+    "eligibility": "60% or above in 10th, 12th, and UG; No active backlogs; Any B.E./B.Tech/M.E./M.Tech/MCA/M.Sc branch",
+    "examPattern": {
+      "sections": ["Verbal", "Reasoning", "Numerical", "Coding (2 problems)"],
+      "duration": "180 min",
+      "mode": "Online"
+    },
+    "difficulty": "Medium",
+    "topics": ["DSA", "Aptitude", "Verbal", "SQL", "OOP"],
+    "roadmap": {
+      "week1": "Aptitude + Verbal",
+      "week2": "Reasoning + Basic DSA",
+      "week3": "Coding practice (Arrays, Strings)",
+      "week4": "Mock tests + Interview prep"
+    },
+    "previousTrends": "Coding questions medium difficulty; strong focus on OOP + SQL in interviews.",
+    "resources": {
+      "practice": ["PrepInsta", "GFG TCS NQT", "IndiaBIX"],
+      "books": ["R.S. Aggarwal Quantitative Aptitude"]
+    },
+    "expectedSalary": "₹3.36 LPA (Ninja) / ₹7 LPA (Digital) / ₹11.5 LPA (Prime)",
+    "hiringProcess": {
+      "rounds": ["NQT Exam", "Technical Interview", "Managerial", "HR"]
+    },
+    "tags": ["service-based", "mass-recruiter", "beginner-friendly"]
+  },
+  {
+    "company": "Google",
+    "slug": "google",
+    "eligibility": "Strong CS fundamentals; Top-tier DSA; Ongoing/completed B.Tech/M.Tech/PhD",
+    "examPattern": {
+      "sections": ["Online Assessment (2 DSA problems, 90 min)", "4-5 technical interviews", "Googleyness"],
+      "duration": "Multi-round",
+      "mode": "Online + Onsite"
+    },
+    "difficulty": "Hard",
+    "topics": ["Advanced DSA", "System Design", "OS", "Networks", "DBMS", "Behavioral"],
+    "roadmap": {
+      "month1-2": "LeetCode 200+ (medium-hard); Cracking the Coding Interview",
+      "month3": "System Design (Grokking, DDIA)",
+      "month4": "Mock interviews on Pramp/Interviewing.io"
+    },
+    "previousTrends": "Focus on graphs, DP, trees; behavioral 'Googleyness' round matters.",
+    "resources": {
+      "practice": ["LeetCode", "Codeforces", "Google Tech Dev Guide"],
+      "books": ["CLRS", "Designing Data-Intensive Applications"]
+    },
+    "expectedSalary": "₹25-50 LPA (SWE-I)",
+    "hiringProcess": {
+      "rounds": ["OA", "Phone Screen", "4-5 Onsite Interviews", "Hiring Committee"]
+    },
+    "tags": ["FAANG", "high-paying", "hard"]
+  },
+  {
+    "company": "Amazon",
+    "slug": "amazon",
+    "eligibility": "CGPA 7+; strong DSA; any engineering branch",
+    "examPattern": {
+      "sections": ["OA (2 coding + work simulation + Amazon values)", "3-4 Interviews (LP-based)"],
+      "duration": "Multi-round",
+      "mode": "Online + Onsite"
+    },
+    "difficulty": "Hard",
+    "topics": ["DSA", "Leadership Principles", "System Design", "OOP"],
+    "roadmap": {
+      "month1": "LeetCode Amazon tagged 150 problems",
+      "month2": "Leadership Principles + STAR stories",
+      "month3": "Mock interviews"
+    },
+    "previousTrends": "Behavioral interviews on 16 LPs are decisive.",
+    "resources": {
+      "practice": ["LeetCode Amazon list", "Amazon.jobs interview prep"]
+    },
+    "expectedSalary": "₹19-44 LPA (SDE-1)",
+    "hiringProcess": {"rounds": ["OA","3-4 Interviews","Bar Raiser"]},
+    "tags": ["FAANG", "high-paying"]
+  },
+  {
+    "company": "Infosys",
+    "slug": "infosys",
+    "eligibility": "60%+ throughout; No standing arrears",
+    "examPattern": {
+      "sections": ["Aptitude","Reasoning","Verbal","Pseudocode","Puzzles","2 Coding Problems"],
+      "duration": "150 min",
+      "mode": "Online"
+    },
+    "difficulty": "Medium",
+    "topics": ["Aptitude","Pseudocode","Basic DSA","OOP"],
+    "roadmap": {
+      "week1-2": "Aptitude + Pseudocode",
+      "week3": "DSA basics",
+      "week4": "Mock tests"
+    },
+    "previousTrends": "Puzzle section can trip beginners.",
+    "resources": {"practice":["PrepInsta Infosys","HackWithInfy archives"]},
+    "expectedSalary": "₹3.6 LPA (SE) / ₹6.5 LPA (Digital SE) / ₹9 LPA (Power Programmer)",
+    "hiringProcess": {"rounds":["Online Test","Technical Interview","HR"]},
+    "tags": ["service-based","mass-recruiter"]
+  },
+  {
+    "company": "Microsoft",
+    "slug": "microsoft",
+    "eligibility": "Strong DSA; CGPA usually 7+; any branch",
+    "examPattern":{"sections":["OA (3 problems on Codility/Mercer)","3-4 Technical Interviews","AA (As Appropriate)"],"duration":"Multi-round","mode":"Online + Onsite"},
+    "difficulty":"Hard",
+    "topics":["DSA","OS","Networks","DBMS","System Design","Behavioral"],
+    "roadmap":{"month1-2":"LeetCode 200+","month3":"Low-level + high-level design","month4":"Mocks"},
+    "previousTrends":"Loves BFS/DFS, DP, strings.",
+    "resources":{"practice":["LeetCode","MSFT Interview Prep"]},
+    "expectedSalary":"₹22-45 LPA",
+    "hiringProcess":{"rounds":["OA","3-4 Interviews","AA Round"]},
+    "tags":["big-tech","high-paying"]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "name":"Artificial Intelligence","slug":"ai","category":"AI/ML",
+    "description":"Field of CS focused on creating machines that mimic human intelligence.",
+    "skills":["Linear Algebra","Statistics","Python","PyTorch","TensorFlow","Prompt Engineering"],
+    "languages":["Python","R","Julia"],
+    "roadmap":{
+      "phase1":["Math foundations","Python","Numpy/Pandas"],
+      "phase2":["ML basics","Scikit-learn","Kaggle"],
+      "phase3":["Deep Learning","PyTorch","CNNs, RNNs, Transformers"],
+      "phase4":["LLMs","RAG","Agents","Fine-tuning"]
+    },
+    "projects":{
+      "beginner":["Iris classifier","House price predictor"],
+      "intermediate":["Image classifier (CNN)","Sentiment analysis"],
+      "advanced":["RAG chatbot","Fine-tuned LLM","Multi-agent system"]
+    },
+    "certifications":["DeepLearning.AI Specialization","Google ML Engineer","AWS ML Specialty"],
+    "salary":"₹8-40 LPA (India), $120K-$300K (US)",
+    "companies":["OpenAI","Google DeepMind","Anthropic","Microsoft","Meta","NVIDIA"],
+    "futureDemand":"Extremely High — 10x growth expected by 2030.",
+    "color":"#8b5cf6"
+  },
+  {
+    "name":"Full Stack Development","slug":"full-stack","category":"Web",
+    "description":"Building both frontend and backend of web applications.",
+    "skills":["HTML","CSS","JavaScript","React","Node.js","Databases","REST APIs","Git"],
+    "languages":["JavaScript","TypeScript","Python","Java"],
+    "roadmap":{
+      "phase1":["HTML","CSS","JS fundamentals"],
+      "phase2":["React","State management","Tailwind"],
+      "phase3":["Node.js","Express","MongoDB/PostgreSQL"],
+      "phase4":["Auth","Deployment","CI/CD","System Design"]
+    },
+    "projects":{
+      "beginner":["Todo app","Weather app"],
+      "intermediate":["Blog with auth","E-commerce"],
+      "advanced":["Real-time chat","SaaS product","Video streaming"]
+    },
+    "certifications":["Meta Full Stack","freeCodeCamp"],
+    "salary":"₹5-25 LPA India, $80K-$180K US",
+    "companies":["Google","Netflix","Airbnb","Flipkart","Razorpay","Zomato"],
+    "futureDemand":"Very High — every business needs web apps.",
+    "color":"#06b6d4"
+  },
+  {
+    "name":"Cloud Computing","slug":"cloud","category":"Infrastructure",
+    "description":"Delivering computing services over the internet.",
+    "skills":["Linux","Networking","AWS/GCP/Azure","IaC","Docker","Kubernetes"],
+    "languages":["Python","Go","YAML","Bash"],
+    "roadmap":{
+      "phase1":["Linux","Networking basics"],
+      "phase2":["AWS Cloud Practitioner","Docker"],
+      "phase3":["Kubernetes","Terraform","CI/CD"],
+      "phase4":["SRE","Multi-cloud","Cost optimization"]
+    },
+    "projects":{
+      "beginner":["Deploy static site to S3","Docker container"],
+      "intermediate":["3-tier app on AWS","K8s cluster"],
+      "advanced":["Multi-region setup","Serverless microservices"]
+    },
+    "certifications":["AWS SAA","GCP ACE","Azure Fundamentals","CKA"],
+    "salary":"₹8-35 LPA India, $110K-$220K US",
+    "companies":["AWS","Google Cloud","Microsoft","Netflix","Airbnb"],
+    "futureDemand":"Very High — every company migrating to cloud.",
+    "color":"#f59e0b"
+  }
+]
