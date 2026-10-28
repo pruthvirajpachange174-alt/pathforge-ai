@@ -17,5 +17,8 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14"
   },
+  "prisma": {
+    "schema": "server/prisma/schema.prisma"
+  },
   "packageManager": "pnpm@9.0.0"
 }

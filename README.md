@@ -58,6 +58,14 @@ Netlify hosts the React/Vite client using the root `netlify.toml`. The Express A
 
 The education catalogs (exams, placements, technology, languages, colleges, hackathons, and the India Education Directory) are public and read-only. Sign-in remains required for AI chat, saved/personal data, roadmaps, recommendations, and catalog administration. Annual exam dates, hiring drives, hackathon dates, eligibility, and prize terms can change; use the linked official notice for the current cycle. The catalog does not present an estimated date as a confirmed date. GATE 2026 dates are displayed only as historical dates, not as the next exam schedule.
 
+### Render API and Prisma
+
+For a Render Web Service, connect the repository root (leave **Root Directory** blank) so pnpm can resolve the workspace. The root `package.json` explicitly points Prisma to `server/prisma/schema.prisma`, including during dependency installation.
+
+- Build command: `corepack enable && pnpm install --frozen-lockfile && pnpm --filter pathforge-server prisma:generate && pnpm --filter pathforge-server build`
+- Start command: `pnpm --filter pathforge-server start`
+- Before the first production start, run `pnpm --filter pathforge-server prisma:migrate:deploy` and `pnpm --filter pathforge-server seed` against the production database.
+
 ## 📄 License
 
 MIT
