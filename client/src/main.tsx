@@ -11,7 +11,17 @@ import AuthProvider from './components/AuthProvider';
 const clerkKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const queryClient = new QueryClient();
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const root = ReactDOM.createRoot(document.getElementById('root')!);
+
+if (!clerkKey) {
+  // Without a key ClerkProvider throws and the page renders blank; show why instead.
+  root.render(
+    <div style={{ padding: 32, color: '#fff', fontFamily: 'Inter, sans-serif' }}>
+      <h1 style={{ fontSize: 20, marginBottom: 8 }}>Configuration missing</h1>
+      <p>Set CLERK_PUBLISHABLE_KEY (or VITE_CLERK_PUBLISHABLE_KEY) and redeploy.</p>
+    </div>,
+  );
+} else root.render(
   <React.StrictMode>
     <ClerkProvider
       publishableKey={clerkKey}
