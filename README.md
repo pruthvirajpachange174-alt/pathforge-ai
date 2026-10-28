@@ -60,9 +60,9 @@ The education catalogs (exams, placements, technology, languages, colleges, hack
 
 ### Render API and Prisma
 
-For a Render Web Service, connect the repository root (leave **Root Directory** blank) so pnpm can resolve the workspace. The root `package.json` explicitly points Prisma to `server/prisma/schema.prisma`, including during dependency installation.
+For a Render Web Service, connect the repository root (leave **Root Directory** blank) so pnpm can resolve the workspace. `.node-version` selects Node.js 22, and the root `package.json` explicitly points Prisma to `server/prisma/schema.prisma`, including during dependency installation. Render sets `NODE_ENV=production` during builds; explicitly install dev dependencies because Prisma CLI and TypeScript are needed to generate and compile the API.
 
-- Build command: `pnpm install --frozen-lockfile && pnpm --filter pathforge-server prisma:generate && pnpm --filter pathforge-server build`
+- Build command: `pnpm install --frozen-lockfile --prod=false && pnpm --filter pathforge-server prisma:generate && pnpm --filter pathforge-server build`
 - Start command: `pnpm --filter pathforge-server start`
 - Before the first production start, run `pnpm --filter pathforge-server prisma:migrate:deploy` and `pnpm --filter pathforge-server seed` against the production database.
 
