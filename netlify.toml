@@ -1,5 +1,6 @@
 [build]
-  command = "pnpm --filter pathforge-client build"
+  # Install devDependencies even when NODE_ENV=production, since vite/tsc are needed to build.
+  command = "pnpm install --prod=false && pnpm --filter pathforge-client build"
   publish = "client/dist"
 
 [build.environment]
