@@ -62,7 +62,7 @@ The education catalogs (exams, placements, technology, languages, colleges, hack
 
 For a Render Web Service, connect the repository root (leave **Root Directory** blank) so pnpm can resolve the workspace. The root `package.json` explicitly points Prisma to `server/prisma/schema.prisma`, including during dependency installation.
 
-- Build command: `corepack enable && pnpm install --frozen-lockfile && pnpm --filter pathforge-server prisma:generate && pnpm --filter pathforge-server build`
+- Build command: `pnpm install --frozen-lockfile && pnpm --filter pathforge-server prisma:generate && pnpm --filter pathforge-server build`
 - Start command: `pnpm --filter pathforge-server start`
 - Before the first production start, run `pnpm --filter pathforge-server prisma:migrate:deploy` and `pnpm --filter pathforge-server seed` against the production database.
 
