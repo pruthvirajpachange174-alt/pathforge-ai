@@ -4,6 +4,12 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # These variables hold non-sensitive configuration (environment name, port,
+  # provider/model names, index names, local URLs). Their values legitimately
+  # appear in source defaults, .env.example and content data, so exclude them
+  # from secrets scanning. Real credentials (API keys, DATABASE_URL, Clerk
+  # secrets) are still scanned.
+  SECRETS_SCAN_OMIT_KEYS = "NODE_ENV,PORT,CLIENT_URL,AI_PROVIDER,GEMINI_MODEL,OPENAI_MODEL,ANTHROPIC_MODEL,EMBEDDING_MODEL,VECTOR_DB,PINECONE_INDEX,CHROMA_URL,CHROMA_COLLECTION"
 
 [[redirects]]
   from = "/*"
