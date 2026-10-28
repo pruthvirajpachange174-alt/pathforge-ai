@@ -1,9 +1,18 @@
-import Anthropic from '@anthropic-ai/sdk';
+/** Provides backend functionality for Ai Service. */
+// import Anthropic from '@anthropic-ai/sdk';
+import { GoogleGenAI } from '@google/genai';
 import OpenAI from 'openai';
 import { env } from '../config/env';
 
-const anthropic = env.ANTHROPIC_API_KEY ? new Anthropic({ apiKey: env.ANTHROPIC_API_KEY }) : null;
+// const anthropic = env.ANTHROPIC_API_KEY ? new Anthropic({ apiKey: env.ANTHROPIC_API_KEY }) : null;
+const gemini = env.GEMINI_API_KEY? new GoogleGenAI({apiKey: env.GEMINI_API_KEY,}): null;
 const openai = env.OPENAI_API_KEY ? new OpenAI({ apiKey: env.OPENAI_API_KEY }) : null;
+
+function formatGeminiPrompt(system: string, messages: ChatMessage[]): string {
+  return `${system}\n\n${messages
+    .map((message) => `${message.role.toUpperCase()}:\n${message.content}`)
+    .join('\n\n')}`;
+}
 
 export interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -15,21 +24,22 @@ export async function generateChatCompletion(opts: {
   messages: ChatMessage[];
   temperature?: number;
   maxTokens?: number;
+  responseFormat?: 'json';
 }): Promise<string> {
-  const { system, messages, temperature = 0.7, maxTokens = 2048 } = opts;
+  const { system, messages, temperature = 0.7, maxTokens = 2048, responseFormat } = opts;
 
-  if (env.AI_PROVIDER === 'anthropic' && anthropic) {
-    const response = await anthropic.messages.create({
-      model: env.ANTHROPIC_MODEL,
-      max_tokens: maxTokens,
-      temperature,
-      system,
-      messages: messages
-        .filter((m) => m.role !== 'system')
-        .map((m) => ({ role: m.role as 'user' | 'assistant', content: m.content })),
+  if (env.AI_PROVIDER === 'gemini' && gemini) {
+    const response = await gemini.models.generateContent({
+      model: env.GEMINI_MODEL,
+      contents: formatGeminiPrompt(system, messages),
+      config: {
+        temperature,
+        maxOutputTokens: maxTokens,
+        ...(responseFormat === 'json' ? { responseMimeType: 'application/json' } : {}),
+      },
     });
-    const block = response.content[0];
-    return block.type === 'text' ? block.text : '';
+
+    return response.text ?? '';
   }
 
   if (openai) {
@@ -37,6 +47,7 @@ export async function generateChatCompletion(opts: {
       model: env.OPENAI_MODEL,
       temperature,
       max_tokens: maxTokens,
+      ...(responseFormat === 'json' ? { response_format: { type: 'json_object' as const } } : {}),
       messages: [{ role: 'system', content: system }, ...messages],
     });
     return response.choices[0]?.message?.content ?? '';
@@ -53,21 +64,17 @@ export async function* streamChatCompletion(opts: {
 }): AsyncGenerator<string> {
   const { system, messages, temperature = 0.7, maxTokens = 2048 } = opts;
 
-  if (env.AI_PROVIDER === 'anthropic' && anthropic) {
-    const stream = anthropic.messages.stream({
-      model: env.ANTHROPIC_MODEL,
-      max_tokens: maxTokens,
-      temperature,
-      system,
-      messages: messages
-        .filter((m) => m.role !== 'system')
-        .map((m) => ({ role: m.role as 'user' | 'assistant', content: m.content })),
+  if (env.AI_PROVIDER === 'gemini' && gemini) {
+    const stream = await gemini.models.generateContentStream({
+      model: env.GEMINI_MODEL,
+      contents: formatGeminiPrompt(system, messages),
+      config: { temperature, maxOutputTokens: maxTokens },
     });
-    for await (const event of stream) {
-      if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
-        yield event.delta.text;
-      }
+
+    for await (const chunk of stream) {
+      if (chunk.text) yield chunk.text;
     }
+
     return;
   }
 
@@ -83,5 +90,8 @@ export async function* streamChatCompletion(opts: {
       const delta = chunk.choices[0]?.delta?.content;
       if (delta) yield delta;
     }
+    return;
   }
+
+  throw new Error('No AI provider configured for streaming');
 }

@@ -1,3 +1,4 @@
+/** Defines AI prompt content and construction for Quiz Prompt. */
 export const QUIZ_PROMPT = `Generate {count} multiple-choice questions on topic: "{topic}" at {difficulty} difficulty.
 
 Return STRICT JSON:

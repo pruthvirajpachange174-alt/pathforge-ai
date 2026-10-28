@@ -1,3 +1,4 @@
+/** Defines AI prompt content and construction for Interview Prompt. */
 export const INTERVIEW_PROMPT = `Act as a senior interviewer for {company} for a {role} position.
 Generate {count} realistic interview questions covering:
 - DSA

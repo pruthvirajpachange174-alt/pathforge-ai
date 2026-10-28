@@ -1,12 +1,14 @@
+/** Renders the Chat application page. */
 import { useEffect, useRef, useState } from 'react';
 import { useAuth } from '@clerk/clerk-react';
-import { api, attachToken } from '@/lib/api';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import { Send, Sparkles, Loader2 } from 'lucide-react';
+import { api } from '@/lib/api';
+import { Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ChatMessage, type Message } from '@/components/chat/ChatMessage';
+import { ChatInput } from '@/components/chat/ChatInput';
+import { consumeChatStream } from '@/lib/chatStream';
 
-interface Msg { role: 'user' | 'assistant'; content: string; }
+type Msg = Message;
 
 export default function Chat() {
   const { getToken } = useAuth();
@@ -16,31 +18,79 @@ export default function Chat() {
   const [conversationId, setConversationId] = useState<string | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => { attachToken(() => getToken()); }, [getToken]);
   useEffect(() => { bottomRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [messages]);
 
   const send = async () => {
     if (!input.trim() || loading) return;
     const userMsg: Msg = { role: 'user', content: input };
-    setMessages((m) => [...m, userMsg, { role: 'assistant', content: '' }]);
+    const assistantIndex = messages.length + 1;
+    setMessages((current) => [...current, userMsg, { role: 'assistant', content: '', streaming: true }]);
     setInput('');
     setLoading(true);
 
     try {
-      const { data } = await api.post('/chat/message', { conversationId, message: userMsg.content });
-      setConversationId(data.data.conversationId);
-      setMessages((m) => {
-        const copy = [...m];
-        copy[copy.length - 1] = { role: 'assistant', content: data.data.reply };
-        return copy;
+      const baseUrl = api.defaults.baseURL?.replace(/\/+$/, '');
+      if (!baseUrl) throw new Error('The chat API URL is not configured.');
+
+      const token = await getToken();
+      const response = await fetch(`${baseUrl}/chat/stream`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        body: JSON.stringify({ conversationId, message: userMsg.content }),
       });
+      if (!response.ok) throw new Error(`Chat request failed with status ${response.status}.`);
+      if (!response.body) throw new Error('The chat response stream is unavailable.');
+
+      let streamError: string | undefined;
+
+      const updateAssistant = (update: (message: Msg) => Msg) => {
+        setMessages((current) => current.map((message, index) => (
+          index === assistantIndex ? update(message) : message
+        )));
+      };
+
+      const completed = await consumeChatStream(response.body, {
+        onConversationId: setConversationId,
+        onToken: (text) => updateAssistant((message) => ({ ...message, content: message.content + text })),
+        onError: (message) => {
+          streamError = message;
+          updateAssistant((assistant) => ({ ...assistant, streaming: false, interrupted: message }));
+        },
+      });
+      if (completed) updateAssistant((message) => ({ ...message, streaming: false }));
+
+      if (!completed && !streamError) streamError = 'The connection ended before the answer was complete.';
+      if (streamError) {
+        updateAssistant((message) => ({
+          ...message,
+          content: message.content || 'I could not complete that response. Please try again.',
+          streaming: false,
+          interrupted: message.content ? streamError : undefined,
+        }));
+      } else {
+        updateAssistant((message) => ({
+          ...message,
+          content: message.content || 'I could not generate a response. Please try again.',
+          streaming: false,
+        }));
+      }
     } catch {
-      setMessages((m) => {
-        const copy = [...m];
-        copy[copy.length - 1] = { role: 'assistant', content: '⚠️ Something went wrong. Please try again.' };
-        return copy;
-      });
-    } finally { setLoading(false); }
+      setMessages((current) => current.map((message, index) => {
+        if (index !== assistantIndex) return message;
+        const assistant = message;
+        return {
+          ...assistant,
+          content: assistant.content || 'I could not connect to PathForge AI. Please try again.',
+          streaming: false,
+          interrupted: assistant.content ? 'The response was interrupted before it finished.' : undefined,
+        };
+      }));
+    } finally {
+      setLoading(false);
+    }
   };
 
   const suggestions = [
@@ -83,38 +133,14 @@ export default function Chat() {
               animate={{ opacity: 1, y: 0 }}
               className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}
             >
-              <div className={`max-w-[85%] rounded-2xl px-4 py-3 ${
-                m.role === 'user'
-                  ? 'bg-gradient-to-br from-brand-600 to-cyanx-500 text-white'
-                  : 'glass text-neutral-100'
-              }`}>
-                {m.content ? (
-                  <div className="prose prose-invert prose-sm max-w-none prose-headings:font-display prose-headings:gradient-text">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
-                  </div>
-                ) : (
-                  <Loader2 className="animate-spin" size={16} />
-                )}
-              </div>
+              <ChatMessage message={m} />
             </motion.div>
           ))}
         </AnimatePresence>
         <div ref={bottomRef} />
       </div>
 
-      <div className="glass-strong rounded-2xl p-3 flex items-end gap-2">
-        <textarea
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } }}
-          placeholder="Ask about placements, exams, hackathons, roadmaps…"
-          rows={1}
-          className="flex-1 bg-transparent resize-none focus:outline-none text-sm py-2 px-3 max-h-40"
-        />
-        <button onClick={send} disabled={loading || !input.trim()} className="btn-primary disabled:opacity-50">
-          {loading ? <Loader2 className="animate-spin" size={16} /> : <Send size={16} />}
-        </button>
-      </div>
+      <ChatInput value={input} onChange={setInput} onSend={send} loading={loading} />
     </div>
   );
 }

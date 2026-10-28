@@ -1,3 +1,4 @@
+/** Defines API routes for Hackathon Routes. */
 import { Router } from 'express';
 import { requireAuth, optionalAuth } from '../middleware/auth.middleware';
 import * as ctrl from '../controllers/hackathon.controller';

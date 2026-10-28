@@ -1,3 +1,5 @@
+# Workspace packages managed by pnpm.
 packages:
-  - "apps/*"
+  - "client"
+  - "server"
   - "packages/*"

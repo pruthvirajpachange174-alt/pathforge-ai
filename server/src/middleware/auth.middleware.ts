@@ -1,7 +1,9 @@
+/** Applies Auth Middleware middleware to API requests. */
 import { Request, Response, NextFunction } from 'express';
 import { clerkClient, verifyToken } from '@clerk/clerk-sdk-node';
 import { env } from '../config/env';
 import { prisma } from '../config/db';
+import { isAdminClerkUser } from '../services/authorization.service';
 
 export interface AuthRequest extends Request {
   userId?: string;
@@ -33,6 +35,17 @@ export const requireAuth = async (req: AuthRequest, res: Response, next: NextFun
     next();
   } catch (err) {
     res.status(401).json({ message: 'Invalid token' });
+  }
+};
+
+export const requireAdmin = async (req: AuthRequest, res: Response, next: NextFunction) => {
+  try {
+    if (!req.clerkId || !(await isAdminClerkUser(req.clerkId))) {
+      return res.status(403).json({ message: 'Administrator access is required' });
+    }
+    next();
+  } catch (error) {
+    next(error);
   }
 };
 

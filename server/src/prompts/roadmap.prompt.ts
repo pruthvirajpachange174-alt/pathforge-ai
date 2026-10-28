@@ -1,4 +1,5 @@
-export const ROADMAP_PROMPT = `Generate a detailed, personalized engineering career roadmap.
+/** Defines AI prompt content and construction for Roadmap Prompt. */
+export const ROADMAP_PROMPT = `Generate a practical, personalized engineering career roadmap.
 
 Student Profile:
 - Year: {year}
@@ -28,7 +29,7 @@ Output STRICT JSON in this schema:
   "placementPrep": {"month":"...","topics":[...]},
   "finalAdvice": "..."
 }
-Return ONLY valid JSON, no markdown fences.`;
+Return one complete JSON object matching the schema exactly. Do not include markdown fences, comments, or explanatory text. Use arrays of strings for skills, projects, languages, activities, and topics. Keep the whole response compact: use no more than 6 semesters, 3 skills, 1 project, 2 languages, 2 activities, and 1 resource per semester; include at most 4 milestones. Keep each string concise (under 12 words). Do not add fields that are not in the schema.`;
 
 export function buildRoadmapPrompt(profile: any, goal: string) {
   return ROADMAP_PROMPT
@@ -37,5 +38,5 @@ export function buildRoadmapPrompt(profile: any, goal: string) {
     .replace('{languages}', (profile.languages ?? []).join(', ') || 'none')
     .replace('{skills}', (profile.skills ?? []).join(', ') || 'none')
     .replace('{interests}', (profile.interests ?? []).join(', ') || 'none')
-    .replace('{goal}', goal);
+    .replace('{goal}', () => goal);
 }

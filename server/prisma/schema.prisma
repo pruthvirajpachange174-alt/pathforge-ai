@@ -12,14 +12,19 @@ model User {
   clerkId        String   @unique
   email          String   @unique
   name           String?
+   image       String?
+   college     String?
   year           Int?     // 1, 2, 3, 4
   branch         String?  // CSE, IT, ECE...
+  careerGoal  String?
+  city        String?
   skills         String[] @default([])
   languages      String[] @default([])
   interests      String[] @default([])
   githubUrl      String?
   leetcodeUrl    String?
   linkedinUrl    String?
+  bio         String?
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
@@ -80,6 +85,8 @@ model GovernmentExam {
   category       String   // Higher Ed | Govt | Banking | Railway
   whoShouldTake  String   @db.Text
   eligibility    String   @db.Text
+  pattern        Json?
+  schedule       Json?
   syllabus       Json
   difficulty     String
   opportunities  String   @db.Text
@@ -166,4 +173,55 @@ model SavedItem {
   user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, itemType, itemId])
+}
+
+model TechCareer {
+  id                String   @id @default(cuid())
+  slug              String   @unique
+  name              String   @unique
+  description       String   @db.Text
+
+  requiredSkills   String[]
+  learningRoadmap  Json     // { phases: [{ title, duration, bullets: string[] }] }
+
+  salaryRange      String
+  demandLevel      String   // Low | Medium | High
+
+  companiesHiring  String[]
+  resources        Json     // { books: [], courses: [], practiceWebsites: [] }
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model College{
+  id          String   @id @default(cuid())
+
+  name        String
+  city        String
+
+  image       String?
+  website     String?
+  ranking     String?
+  description String?
+
+  courses     String[]
+  facilities  String[]
+}
+
+model IndiaDirectoryEntry {
+  id                 String   @id @default(cuid())
+  slug               String   @unique
+  category           String
+  title              String
+  fields             Json
+  sourceUrl          String?
+  sourceSection      String
+  verificationStatus String
+  sourceNotes        String   @db.Text
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([category])
+  @@index([title])
 }

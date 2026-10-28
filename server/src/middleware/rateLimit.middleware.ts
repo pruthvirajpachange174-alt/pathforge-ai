@@ -1,3 +1,4 @@
+/** Applies Rate Limit Middleware middleware to API requests. */
 import rateLimit from 'express-rate-limit';
 
 export const apiLimiter = rateLimit({

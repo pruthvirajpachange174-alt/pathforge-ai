@@ -1,3 +1,4 @@
+/** Bootstraps or starts the backend App service. */
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -6,19 +7,35 @@ import { env } from './config/env';
 import routes from './routes';
 import { errorHandler } from './middleware/error.middleware';
 import { apiLimiter } from './middleware/rateLimit.middleware';
+import adminCollegeRoutes from "./routes/adminCollege.routes";
+import adminPlacementRoutes from "./routes/adminPlacement.routes";
 
 const app = express();
 
 app.use(helmet());
 app.use(cors({ origin: env.CLIENT_URL.split(','), credentials: true }));
-app.use(express.json({ limit: '10mb' }));
+
+// Clerk webhook must receive raw body
+app.use(
+  "/api/v1/webhooks/clerk",
+  express.raw({ type: "application/json" })
+);
+
+// Normal JSON parsing
+app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
+
 app.use(morgan('dev'));
 app.use('/api', apiLimiter);
 
 app.get('/health', (_req, res) => res.json({ status: 'ok', service: 'PathForge AI' }));
 
 app.use('/api/v1', routes);
+// Admin college routes
+app.use("/api/v1/admin/colleges",adminCollegeRoutes);
+
+// Admin placement routes
+app.use("/api/v1/admin/placement", adminPlacementRoutes);
 
 app.use(errorHandler);
 

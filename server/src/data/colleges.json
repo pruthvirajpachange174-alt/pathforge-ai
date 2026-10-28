@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Indian Institute of Technology Bombay",
+    "city": "Mumbai, Maharashtra",
+    "website": "https://www.iitb.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and overall tables; rank depends on category and year.",
+    "description": "Public technical institute in Mumbai offering undergraduate, postgraduate, and doctoral programmes across engineering, science, design, and management.",
+    "courses": ["Engineering and technology", "Science", "Design", "Management", "Doctoral research"],
+    "facilities": ["Central library", "Laboratories", "Student hostels", "Research centres", "Innovation and entrepreneurship support"]
+  },
+  {
+    "name": "Indian Institute of Technology Delhi",
+    "city": "New Delhi",
+    "website": "https://home.iitd.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and overall tables; rank depends on category and year.",
+    "description": "Public technical institute in New Delhi with engineering, science, design, management, and interdisciplinary education and research.",
+    "courses": ["Engineering and technology", "Science", "Design", "Management", "Doctoral research"],
+    "facilities": ["Central library", "Laboratories", "Student residences", "Research centres", "Innovation and entrepreneurship support"]
+  },
+  {
+    "name": "Indian Institute of Technology Madras",
+    "city": "Chennai, Tamil Nadu",
+    "website": "https://www.iitm.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and overall tables; rank depends on category and year.",
+    "description": "Public technical institute in Chennai offering engineering, science, humanities, management, and interdisciplinary programmes.",
+    "courses": ["Engineering and technology", "Science", "Humanities", "Management", "Doctoral research"],
+    "facilities": ["Central library", "Laboratories", "Research parks and centres", "Student residences", "Incubation support"]
+  },
+  {
+    "name": "Indian Institute of Science",
+    "city": "Bengaluru, Karnataka",
+    "website": "https://www.iisc.ac.in/",
+    "ranking": "Check the latest NIRF India overall and research tables; rank depends on category and year.",
+    "description": "Public research institution in Bengaluru focused on advanced education and research in science, engineering, design, and interdisciplinary areas.",
+    "courses": ["Science", "Engineering", "Research programmes", "Interdisciplinary programmes"],
+    "facilities": ["Research laboratories", "Libraries", "Central instrumentation facilities", "Student housing", "Incubation and innovation support"]
+  },
+  {
+    "name": "Indian Institute of Technology Kanpur",
+    "city": "Kanpur, Uttar Pradesh",
+    "website": "https://www.iitk.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and overall tables; rank depends on category and year.",
+    "description": "Public technical institute offering education and research across engineering, science, humanities, and management.",
+    "courses": ["Engineering and technology", "Science", "Humanities", "Management", "Doctoral research"],
+    "facilities": ["Central library", "Laboratories", "Research centres", "Student residences", "Entrepreneurship support"]
+  },
+  {
+    "name": "Indian Institute of Technology Kharagpur",
+    "city": "Kharagpur, West Bengal",
+    "website": "https://www.iitkgp.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and overall tables; rank depends on category and year.",
+    "description": "Public technical institute with a broad range of engineering, science, architecture, law, management, and humanities programmes.",
+    "courses": ["Engineering and technology", "Science", "Architecture", "Law", "Management", "Humanities"],
+    "facilities": ["Libraries", "Laboratories", "Research centres", "Student halls", "Innovation and entrepreneurship support"]
+  },
+  {
+    "name": "Indian Institute of Technology Guwahati",
+    "city": "Guwahati, Assam",
+    "website": "https://www.iitg.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and overall tables; rank depends on category and year.",
+    "description": "Public technical institute in Assam offering engineering, science, design, humanities, and interdisciplinary research programmes.",
+    "courses": ["Engineering and technology", "Science", "Design", "Humanities", "Doctoral research"],
+    "facilities": ["Central library", "Laboratories", "Research centres", "Student residences", "Incubation support"]
+  },
+  {
+    "name": "National Institute of Technology Tiruchirappalli",
+    "city": "Tiruchirappalli, Tamil Nadu",
+    "website": "https://www.nitt.edu/",
+    "ranking": "Check the latest NIRF India engineering table; rank depends on category and year.",
+    "description": "Public technical institute offering undergraduate, postgraduate, and doctoral programmes in engineering, science, architecture, and management.",
+    "courses": ["Engineering and technology", "Science", "Architecture", "Management", "Doctoral research"],
+    "facilities": ["Central library", "Department laboratories", "Student hostels", "Research centres", "Career development support"]
+  },
+  {
+    "name": "National Institute of Technology Karnataka, Surathkal",
+    "city": "Mangaluru, Karnataka",
+    "website": "https://www.nitk.ac.in/",
+    "ranking": "Check the latest NIRF India engineering table; rank depends on category and year.",
+    "description": "Public technical institute at Surathkal offering engineering, science, and management education and research.",
+    "courses": ["Engineering and technology", "Science", "Management", "Doctoral research"],
+    "facilities": ["Central library", "Laboratories", "Student residences", "Research centres", "Career development support"]
+  },
+  {
+    "name": "National Institute of Technology Warangal",
+    "city": "Warangal, Telangana",
+    "website": "https://www.nitw.ac.in/",
+    "ranking": "Check the latest NIRF India engineering table; rank depends on category and year.",
+    "description": "Public technical institute offering engineering, science, and management programmes with research opportunities.",
+    "courses": ["Engineering and technology", "Science", "Management", "Doctoral research"],
+    "facilities": ["Central library", "Laboratories", "Student hostels", "Research centres", "Placement and training support"]
+  },
+  {
+    "name": "International Institute of Information Technology Hyderabad",
+    "city": "Hyderabad, Telangana",
+    "website": "https://www.iiit.ac.in/",
+    "ranking": "Check current institute and official ranking sources; category and methodology vary.",
+    "description": "Research-focused institution in Hyderabad with programmes and research in computing, electronics, and interdisciplinary areas.",
+    "courses": ["Computer science", "Electronics and communication", "Computational linguistics", "Interdisciplinary research"],
+    "facilities": ["Research laboratories", "Libraries", "Student residences", "Innovation programmes", "Industry collaboration"]
+  },
+  {
+    "name": "Birla Institute of Technology and Science, Pilani",
+    "city": "Pilani, Rajasthan",
+    "website": "https://www.bits-pilani.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and university tables; rank depends on category and year.",
+    "description": "Deemed university with campuses and programmes in engineering, science, pharmacy, economics, and management.",
+    "courses": ["Engineering and technology", "Science", "Pharmacy", "Economics", "Management"],
+    "facilities": ["Libraries", "Laboratories", "Student residences", "Practice school programme", "Entrepreneurship support"]
+  },
+  {
+    "name": "Delhi Technological University",
+    "city": "Delhi",
+    "website": "https://dtu.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and university tables; rank depends on category and year.",
+    "description": "Public state university in Delhi offering engineering, technology, management, and related programmes.",
+    "courses": ["Engineering and technology", "Applied sciences", "Management", "Doctoral research"],
+    "facilities": ["Libraries", "Department laboratories", "Student services", "Innovation and incubation support", "Career services"]
+  },
+  {
+    "name": "Anna University",
+    "city": "Chennai, Tamil Nadu",
+    "website": "https://www.annauniv.edu/",
+    "ranking": "Check the latest NIRF India university and engineering tables; rank depends on category and year.",
+    "description": "Public state university in Tamil Nadu with engineering, technology, architecture, and allied programmes and affiliated institutions.",
+    "courses": ["Engineering and technology", "Architecture", "Applied sciences", "Research programmes"],
+    "facilities": ["Libraries", "Laboratories", "Research centres", "Student services", "University departments"]
+  },
+  {
+    "name": "Jadavpur University",
+    "city": "Kolkata, West Bengal",
+    "website": "https://www.jaduniv.edu.in/",
+    "ranking": "Check the latest NIRF India university and engineering tables; rank depends on category and year.",
+    "description": "Public state university in Kolkata with engineering, science, arts, and interdisciplinary programmes.",
+    "courses": ["Engineering and technology", "Science", "Arts", "Interdisciplinary research"],
+    "facilities": ["Libraries", "Laboratories", "Research centres", "Student services", "Career and placement support"]
+  },
+  {
+    "name": "Vellore Institute of Technology",
+    "city": "Vellore, Tamil Nadu",
+    "website": "https://vit.ac.in/",
+    "ranking": "Check the latest NIRF India engineering and university tables; rank depends on category and year.",
+    "description": "Private deemed university with engineering, science, management, and related programmes across its campuses.",
+    "courses": ["Engineering and technology", "Science", "Management", "Humanities", "Research programmes"],
+    "facilities": ["Libraries", "Laboratories", "Student residences", "Innovation facilities", "Career development services"]
+  }
+]

@@ -1,3 +1,4 @@
+/** Provides shared Use Auth React behavior. */
 import { useEffect, useState } from 'react';
 
 export function useTheme() {

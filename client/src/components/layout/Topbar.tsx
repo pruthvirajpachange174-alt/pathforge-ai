@@ -1,3 +1,4 @@
+/** Renders the Topbar interface component. */
 import { UserButton, SignedIn, SignedOut, SignInButton } from '@clerk/clerk-react';
 import { ThemeToggle } from '@/components/common/ThemeToggle';
 import { Search } from 'lucide-react';

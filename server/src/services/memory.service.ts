@@ -1,3 +1,4 @@
+/** Provides backend functionality for Memory Service. */
 import { prisma } from '../config/db';
 
 export async function getUserProfile(userId: string) {

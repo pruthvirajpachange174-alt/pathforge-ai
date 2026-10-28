@@ -1,3 +1,4 @@
+/** Handles API requests for Chat Controller. */
 import { Response } from 'express';
 import { prisma } from '../config/db';
 import { AuthRequest } from '../middleware/auth.middleware';
@@ -6,6 +7,31 @@ import { generateChatCompletion, streamChatCompletion } from '../services/ai.ser
 import { retrieveContext, formatContextForPrompt } from '../services/rag.service';
 import { getUserProfile, formatUserProfile } from '../services/memory.service';
 import { buildSystemPrompt } from '../prompts/system.prompt';
+import { logger } from '../utils/logger';
+
+async function resolveConversationId(
+  req: AuthRequest,
+  conversationId: unknown,
+  firstMessage: string,
+): Promise<string | null> {
+  const userId = req.userId;
+  if (!userId) return null;
+
+  if (conversationId !== undefined && conversationId !== null && conversationId !== '') {
+    if (typeof conversationId !== 'string') return null;
+    const conversation = await prisma.conversation.findFirst({
+      where: { id: conversationId, userId },
+      select: { id: true },
+    });
+    return conversation?.id ?? null;
+  }
+
+  const conversation = await prisma.conversation.create({
+    data: { userId, title: firstMessage.slice(0, 40) || 'New Chat' },
+    select: { id: true },
+  });
+  return conversation.id;
+}
 
 export const listConversations = asyncHandler(async (req: AuthRequest, res: Response) => {
   const conversations = await prisma.conversation.findMany({
@@ -17,8 +43,10 @@ export const listConversations = asyncHandler(async (req: AuthRequest, res: Resp
 });
 
 export const getConversation = asyncHandler(async (req: AuthRequest, res: Response) => {
+  const conversationId = String(req.params.id);
+
   const conversation = await prisma.conversation.findFirst({
-    where: { id: req.params.id, userId: req.userId },
+    where: { id: conversationId, userId: req.userId },
     include: { messages: { orderBy: { createdAt: 'asc' } } },
   });
   if (!conversation) return res.status(404).json({ message: 'Not found' });
@@ -34,15 +62,9 @@ export const createConversation = asyncHandler(async (req: AuthRequest, res: Res
 
 export const sendMessage = asyncHandler(async (req: AuthRequest, res: Response) => {
   const { conversationId, message } = req.body;
-  if (!message?.trim()) return res.status(400).json({ message: 'Message required' });
-
-  let convId = conversationId;
-  if (!convId) {
-    const conv = await prisma.conversation.create({
-      data: { userId: req.userId!, title: message.slice(0, 40) },
-    });
-    convId = conv.id;
-  }
+  if (typeof message !== 'string' || !message.trim()) return res.status(400).json({ message: 'Message required' });
+  const convId = await resolveConversationId(req, conversationId, message);
+  if (!convId) return res.status(404).json({ message: 'Conversation not found' });
 
   // Persist user message
   await prisma.message.create({
@@ -91,15 +113,9 @@ export const sendMessage = asyncHandler(async (req: AuthRequest, res: Response) 
 
 export const streamMessage = asyncHandler(async (req: AuthRequest, res: Response) => {
   const { conversationId, message } = req.body;
-  if (!message?.trim()) return res.status(400).json({ message: 'Message required' });
-
-  let convId = conversationId;
-  if (!convId) {
-    const conv = await prisma.conversation.create({
-      data: { userId: req.userId!, title: message.slice(0, 40) },
-    });
-    convId = conv.id;
-  }
+  if (typeof message !== 'string' || !message.trim()) return res.status(400).json({ message: 'Message required' });
+  const convId = await resolveConversationId(req, conversationId, message);
+  if (!convId) return res.status(404).json({ message: 'Conversation not found' });
 
   await prisma.message.create({
     data: { conversationId: convId, role: 'user', content: message },
@@ -119,29 +135,46 @@ export const streamMessage = asyncHandler(async (req: AuthRequest, res: Response
   res.setHeader('Content-Type', 'text/event-stream');
   res.setHeader('Cache-Control', 'no-cache');
   res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering', 'no');
   res.write(`event: meta\ndata: ${JSON.stringify({ conversationId: convId })}\n\n`);
 
   const system = buildSystemPrompt(context, userProfile);
   let full = '';
-  for await (const chunk of streamChatCompletion({
-    system,
-    messages: history.map((m) => ({ role: m.role as any, content: m.content })),
-  })) {
-    full += chunk;
-    res.write(`event: token\ndata: ${JSON.stringify({ text: chunk })}\n\n`);
+  try {
+    for await (const chunk of streamChatCompletion({
+      system,
+      messages: history.map((m) => ({ role: m.role as any, content: m.content })),
+    })) {
+      if (res.destroyed) return;
+      full += chunk;
+      res.write(`event: token\ndata: ${JSON.stringify({ text: chunk })}\n\n`);
+    }
+    if (res.destroyed) return;
+
+    await prisma.message.create({
+      data: { conversationId: convId, role: 'assistant', content: full },
+    });
+    await prisma.conversation.update({
+      where: { id: convId },
+      data: { updatedAt: new Date() },
+    });
+
+    res.write(`event: done\ndata: {}\n\n`);
+    res.end();
+  } catch (error) {
+    logger.error(`Chat stream failed: ${error instanceof Error ? error.message : String(error)}`);
+    if (!res.destroyed) {
+      res.write(`event: error\ndata: ${JSON.stringify({ message: 'The response could not be completed. Please try again.' })}\n\n`);
+      res.end();
+    }
   }
-
-  await prisma.message.create({
-    data: { conversationId: convId, role: 'assistant', content: full },
-  });
-
-  res.write(`event: done\ndata: {}\n\n`);
-  res.end();
 });
 
 export const deleteConversation = asyncHandler(async (req: AuthRequest, res: Response) => {
+  const conversationId = String(req.params.id);
+
   await prisma.conversation.deleteMany({
-    where: { id: req.params.id, userId: req.userId },
+    where: { id: conversationId, userId: req.userId },
   });
   res.json({ success: true });
 });

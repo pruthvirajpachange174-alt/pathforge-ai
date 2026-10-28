@@ -1,17 +1,12 @@
-import { motion } from 'framer-motion';
+/** Renders the Glass Card interface component. */
 import { cn } from '@/lib/utils';
 
-export function GlassCard({ children, className, delay = 0 }: {
-  children: React.ReactNode; className?: string; delay?: number;
+export function GlassCard({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
 }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay }}
-      className={cn('glass rounded-2xl p-6', className)}
-    >
-      {children}
-    </motion.div>
-  );
+  return <div className={cn('glass rounded-2xl p-6', className)}>{children}</div>;
 }

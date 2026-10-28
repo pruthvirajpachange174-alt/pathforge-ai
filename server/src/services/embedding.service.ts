@@ -1,3 +1,4 @@
+/** Provides backend functionality for Embedding Service. */
 import OpenAI from 'openai';
 import { env } from '../config/env';
 

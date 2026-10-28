@@ -1,3 +1,4 @@
+/** Defines API routes for Language Routes. */
 import { Router } from 'express';
 import * as ctrl from '../controllers/language.controller';
 const router = Router();

@@ -1,3 +1,4 @@
+/** Provides backend utilities for Logger. */
 import winston from 'winston';
 
 export const logger = winston.createLogger({

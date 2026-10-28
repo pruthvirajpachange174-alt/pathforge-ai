@@ -53,5 +53,126 @@
     "futureScope":"Replacing C++ in critical systems. Loved by developers 8 years running.",
     "exampleProjects":["Blockchain node","OS kernel module","Web server with Axum"],
     "color":"#dea584"
+  },
+  {
+    "name":"C","slug":"c",
+    "usedFor":["Operating systems","Embedded systems","Compilers","Systems programming"],
+    "companies":["Embedded and semiconductor employers","Systems software teams","Automotive technology companies"],
+    "pros":["Small language with direct systems concepts","Portable C standard libraries","Useful for embedded and operating-system fundamentals"],
+    "cons":["Manual memory management","Limited built-in abstractions","Undefined behaviour can be difficult to debug"],
+    "beginnerFriendly":6,"demand":7,
+    "futureScope":"A foundational systems language that remains useful in embedded, firmware, operating-system, and performance-critical work.",
+    "exampleProjects":["Command-line utility","Microcontroller sensor project","Simple memory allocator"],
+    "color":"#555555"
+  },
+  {
+    "name":"C++","slug":"cpp",
+    "usedFor":["Systems software","Game development","Competitive programming","Embedded and performance-critical applications"],
+    "companies":["Game studios","Automotive and robotics companies","Financial technology teams","Systems software teams"],
+    "pros":["High performance","Large ecosystem","Supports multiple programming styles","Widely used in algorithm competitions"],
+    "cons":["Complex language and build tooling","Manual memory and lifetime concepts require care"],
+    "beginnerFriendly":5,"demand":8,
+    "futureScope":"Important for game engines, embedded software, high-performance services, and existing large systems.",
+    "exampleProjects":["Data-structure visualizer","2D game","Multithreaded file indexer"],
+    "color":"#00599c"
+  },
+  {
+    "name":"TypeScript","slug":"typescript",
+    "usedFor":["Web frontend","Node.js backend","Full-stack applications","Large JavaScript codebases"],
+    "companies":["Microsoft","Google","Shopify","Atlassian","Indian product startups"],
+    "pros":["Static checking for JavaScript projects","Strong editor tooling","Large web ecosystem"],
+    "cons":["Requires a build or runtime toolchain in many projects","Types do not validate untrusted runtime data by themselves"],
+    "beginnerFriendly":8,"demand":10,
+    "futureScope":"A widely used choice for maintainable frontend and Node.js applications; learn JavaScript fundamentals first.",
+    "exampleProjects":["Typed React dashboard","Node.js REST API","Browser extension"],
+    "color":"#3178c6"
+  },
+  {
+    "name":"SQL","slug":"sql",
+    "usedFor":["Relational databases","Analytics","Reporting","Application data access"],
+    "companies":["Banks","E-commerce companies","Consultancies","Product and analytics teams"],
+    "pros":["Core skill across data roles","Declarative query model","Portable concepts across relational databases"],
+    "cons":["Database dialects differ","Poorly designed queries can be expensive","Not a general-purpose application language"],
+    "beginnerFriendly":9,"demand":10,
+    "futureScope":"Essential for software, analytics, data engineering, and database work across industries.",
+    "exampleProjects":["Student result database","Sales reporting queries","Inventory schema and dashboard"],
+    "color":"#4479a1"
+  },
+  {
+    "name":"C#","slug":"csharp",
+    "usedFor":[".NET web services","Enterprise applications","Desktop software","Unity game development"],
+    "companies":["Microsoft","Enterprise software teams","Game studios","Indian IT services companies"],
+    "pros":["Modern language and tooling","Strong .NET ecosystem","Good support for web, cloud, and games"],
+    "cons":["Some roles are concentrated in particular ecosystems","Framework knowledge is needed beyond syntax"],
+    "beginnerFriendly":8,"demand":8,
+    "futureScope":"Useful for enterprise development on .NET, Azure services, and Unity-based games.",
+    "exampleProjects":["ASP.NET Core API","Unity 2D game","Expense-tracking application"],
+    "color":"#512bd4"
+  },
+  {
+    "name":"Kotlin","slug":"kotlin",
+    "usedFor":["Android development","JVM backend","Multiplatform applications"],
+    "companies":["Android product teams","JVM platform teams","Indian mobile application companies"],
+    "pros":["Official Android development support","Concise JVM language","Interoperates with Java"],
+    "cons":["Smaller ecosystem than Java in some areas","Multiplatform libraries and tooling vary by use case"],
+    "beginnerFriendly":7,"demand":8,
+    "futureScope":"A strong option for Android applications and a growing choice for JVM and multiplatform development.",
+    "exampleProjects":["Android habit tracker","Ktor REST service","Offline-first notes app"],
+    "color":"#7f52ff"
+  },
+  {
+    "name":"Swift","slug":"swift",
+    "usedFor":["iOS and macOS applications","Apple platform development","Server-side Swift in selected environments"],
+    "companies":["Apple ecosystem developers","Mobile product companies","iOS consultancies"],
+    "pros":["Designed for Apple platforms","Modern type system","Good support for app development"],
+    "cons":["Apple tooling is most accessible on Apple hardware","Fewer opportunities outside Apple-platform work"],
+    "beginnerFriendly":7,"demand":7,
+    "futureScope":"Relevant for iOS and Apple-platform development; demand depends on mobile product teams.",
+    "exampleProjects":["iOS weather app","SwiftUI task tracker","Accessible settings screen"],
+    "color":"#f05138"
+  },
+  {
+    "name":"PHP","slug":"php",
+    "usedFor":["Server-rendered websites","WordPress","Laravel applications","Web APIs"],
+    "companies":["Web agencies","E-commerce teams","WordPress companies","PHP product teams"],
+    "pros":["Large installed web base","Accessible deployment options","Mature frameworks and documentation"],
+    "cons":["Legacy code quality varies","Framework and version practices need attention"],
+    "beginnerFriendly":8,"demand":7,
+    "futureScope":"Continues to support a large portion of web infrastructure and modern application development with current PHP frameworks.",
+    "exampleProjects":["Laravel course portal","WordPress plugin","REST API with authentication"],
+    "color":"#777bb4"
+  },
+  {
+    "name":"R","slug":"r",
+    "usedFor":["Statistics","Research","Data analysis","Data visualization"],
+    "companies":["Research organisations","Analytics teams","Universities","Public-health and finance teams"],
+    "pros":["Strong statistical ecosystem","Excellent plotting tools","Common in academic research"],
+    "cons":["Less common for general application development","Package and deployment practices can vary"],
+    "beginnerFriendly":7,"demand":6,
+    "futureScope":"Useful for statistics-heavy analysis and research; Python and SQL are often complementary skills.",
+    "exampleProjects":["Exploratory data analysis","Survey dashboard","Statistical model report"],
+    "color":"#276dc3"
+  },
+  {
+    "name":"Dart","slug":"dart",
+    "usedFor":["Flutter mobile applications","Cross-platform user interfaces","Web and desktop apps with Flutter"],
+    "companies":["Flutter product teams","Mobile development consultancies","Cross-platform startups"],
+    "pros":["Single language for Flutter applications","Good developer tooling","Supports mobile, web, and desktop Flutter targets"],
+    "cons":["Most useful within the Flutter ecosystem","Native platform integrations still require platform knowledge"],
+    "beginnerFriendly":8,"demand":7,
+    "futureScope":"A practical route into cross-platform app development when paired with Flutter and platform fundamentals.",
+    "exampleProjects":["Campus events app","Expense tracker","Offline-first study planner"],
+    "color":"#0175c2"
+  },
+  {
+    "name":"Ruby","slug":"ruby",
+    "usedFor":["Web development","Automation","Scripting","Rails applications"],
+    "companies":["Ruby on Rails product teams","Web consultancies","Startups"],
+    "pros":["Readable syntax","Fast prototyping","Mature Rails ecosystem"],
+    "cons":["Fewer roles than JavaScript, Java, or Python in many regions","Runtime performance needs consideration at scale"],
+    "beginnerFriendly":8,"demand":5,
+    "futureScope":"A productive language for existing Rails products and teams that value rapid web development.",
+    "exampleProjects":["Rails event booking app","CLI task manager","JSON API"],
+    "color":"#cc342d"
   }
 ]

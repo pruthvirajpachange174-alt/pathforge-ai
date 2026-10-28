@@ -1,16 +1,33 @@
+/** Renders the Sidebar interface component. */
 import { NavLink } from 'react-router-dom';
 import {
-  LayoutDashboard, Briefcase, Building2, Cpu, Code2, Trophy, Map, MessageSquare, GitCompare
+  LayoutDashboard,
+  Briefcase,
+  Building2,
+  Cpu,
+  Code2,
+  Trophy,
+  Map,
+  MessageSquare,
+  GitCompare,
+  GraduationCap,
+  Database,
+  User,
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useAdminStatus } from '@/hooks/useAdminStatus';
 
 const nav = [
-  { to: '/', label: 'Dashboard', icon: LayoutDashboard },
+  { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { to: '/chat', label: 'AI Mentor', icon: MessageSquare },
+  { to: '/profile', label: 'My Profile', icon: User },
   { to: '/placements', label: 'Placements', icon: Briefcase },
   { to: '/government', label: 'Govt Exams', icon: Building2 },
   { to: '/tech', label: 'Tech Careers', icon: Cpu },
+  { to: '/colleges', label: 'Top Colleges', icon: GraduationCap },
+  { to: '/directory', label: 'India Directory', icon: Database },
+  { to: '/admin', label: 'Admin', icon: Shield },
   { to: '/languages', label: 'Languages', icon: Code2 },
   { to: '/hackathons', label: 'Hackathons', icon: Trophy },
   { to: '/roadmaps', label: 'Roadmaps', icon: Map },
@@ -18,27 +35,32 @@ const nav = [
 ];
 
 export function Sidebar() {
+  const { status: adminStatus } = useAdminStatus();
+  const visibleNav = nav.filter((item) => item.to !== '/admin' || adminStatus === 'admin');
+
   return (
-    <aside className="hidden lg:flex flex-col w-64 h-screen sticky top-0 p-4 glass-strong border-r border-white/5">
-      <div className="flex items-center gap-2 px-2 mb-8">
-        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-cyanx-500" />
+    <aside className="glass-strong sticky top-0 hidden h-screen w-64 flex-col border-r border-white/5 p-4 lg:flex">
+      <div className="mb-8 flex items-center gap-2 px-2">
+        <div className="from-brand-500 to-cyanx-500 h-9 w-9 rounded-xl bg-gradient-to-br" />
         <div>
-          <h1 className="font-display font-bold text-lg">PathForge<span className="gradient-text"> AI</span></h1>
+          <h1 className="font-display text-lg font-bold">
+            PathForge<span className="gradient-text"> AI</span>
+          </h1>
           <p className="text-[10px] text-neutral-500">Career Mentor</p>
         </div>
       </div>
       <nav className="flex flex-col gap-1">
-        {nav.map((n) => (
+        {visibleNav.map((n) => (
           <NavLink
             key={n.to}
             to={n.to}
-            end={n.to === '/'}
+            end={n.to === '/dashboard'}
             className={({ isActive }) =>
               cn(
-                'flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all',
+                'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition-all',
                 isActive
-                  ? 'bg-gradient-to-r from-brand-500/20 to-cyanx-500/20 text-white'
-                  : 'text-neutral-400 hover:bg-white/5 hover:text-white'
+                  ? 'from-brand-500/20 to-cyanx-500/20 bg-gradient-to-r text-white'
+                  : 'text-neutral-400 hover:bg-white/5 hover:text-white',
               )
             }
           >
@@ -46,16 +68,14 @@ export function Sidebar() {
               <>
                 <n.icon size={18} />
                 <span>{n.label}</span>
-                {isActive && (
-                  <motion.div layoutId="dot" className="ml-auto w-1.5 h-1.5 rounded-full bg-brand-400" />
-                )}
+                {isActive && <span className="bg-brand-400 ml-auto h-1.5 w-1.5 rounded-full" />}
               </>
             )}
           </NavLink>
         ))}
       </nav>
-      <div className="mt-auto glass rounded-xl p-4 text-xs text-neutral-400">
-        <p className="font-semibold text-white mb-1">💡 Pro tip</p>
+      <div className="glass mt-auto rounded-xl p-4 text-xs text-neutral-400">
+        <p className="mb-1 font-semibold text-white">💡 Pro tip</p>
         Complete your profile to unlock personalized hackathon & tech recommendations.
       </div>
     </aside>

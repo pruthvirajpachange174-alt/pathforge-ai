@@ -1,3 +1,4 @@
+/** Configures Pinecone for the backend. */
 import { Pinecone } from '@pinecone-database/pinecone';
 import { env } from './env';
 

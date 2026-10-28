@@ -1,0 +1,1306 @@
+[
+  {
+    "slug": "java-full-stack-developer",
+    "name": "Java Full Stack Developer",
+    "description": "Build enterprise-grade web applications using Java (Spring) on the backend and modern UI frameworks on the frontend. Focus on scalable APIs, secure authentication, and maintainable architecture.",
+    "requiredSkills": [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Spring Security",
+      "JPA/Hibernate",
+      "SQL",
+      "HTML/CSS",
+      "JavaScript/TypeScript",
+      "React",
+      "Testing (JUnit/Mockito)"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Foundations (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Core Java syntax, OOP, collections",
+            "Git + Maven basics",
+            "HTTP fundamentals (verbs, status codes)",
+            "Basic SQL and joins"
+          ]
+        },
+        {
+          "title": "Backend (Weeks 5-10)",
+          "duration": "6 weeks",
+          "bullets": [
+            "Spring Boot CRUD APIs",
+            "Validation + error handling",
+            "Auth with Spring Security (JWT/session)",
+            "Hibernate mappings and pagination"
+          ]
+        },
+        {
+          "title": "Frontend Integration (Weeks 11-14)",
+          "duration": "4 weeks",
+          "bullets": [
+            "React fundamentals",
+            "State management with hooks",
+            "Consume REST APIs",
+            "Forms, loading/error UX"
+          ]
+        },
+        {
+          "title": "Hardening (Weeks 15-18)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Testing (unit + integration)",
+            "Performance basics (caching, N+1 avoidance)",
+            "Security review",
+            "Deploy sample app"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹8 LPA – ₹18 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "TCS",
+      "Infosys",
+      "Wipro",
+      "Accenture",
+      "HCLTech",
+      "Cognizant",
+      "Capgemini"
+    ],
+    "resources": {
+      "books": [
+        "Effective Java (Joshua Bloch)",
+        "Spring in Action (Craig Walls)",
+        "Clean Code (Robert C. Martin)"
+      ],
+      "courses": [
+        "Java Programming Masterclass (Udemy) - Spring modules",
+        "Spring Boot + Microservices (Udemy/Coursera)",
+        "React - The Complete Guide (Udemy)"
+      ],
+      "practiceWebsites": [
+        "LeetCode",
+        "HackerRank",
+        "Codewars",
+        "Spring Boot sample projects on GitHub"
+      ]
+    }
+  },
+  {
+    "slug": "frontend-developer",
+    "name": "Frontend Developer",
+    "description": "Design and develop user interfaces for web applications. Create responsive, accessible experiences with strong performance and UI engineering best practices.",
+    "requiredSkills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Accessibility (ARIA)",
+      "Performance (LCP/CLS)",
+      "Testing (Jest/RTL)",
+      "CSS frameworks (Tailwind)",
+      "Build tooling (Vite/Webpack)"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Web Fundamentals (Weeks 1-3)",
+          "duration": "3 weeks",
+          "bullets": [
+            "HTML semantics",
+            "Modern CSS layout (Flex/Grid)",
+            "Responsive design",
+            "DOM events"
+          ]
+        },
+        {
+          "title": "Modern UI Engineering (Weeks 4-8)",
+          "duration": "5 weeks",
+          "bullets": [
+            "TypeScript basics",
+            "React components + hooks",
+            "State and forms",
+            "Routing and data fetching"
+          ]
+        },
+        {
+          "title": "Quality & Performance (Weeks 9-12)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Accessibility audits",
+            "Write unit tests",
+            "Optimize bundle size",
+            "Implement loading/error states"
+          ]
+        },
+        {
+          "title": "Portfolio Projects (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Build dashboard / e-commerce UI",
+            "Add end-to-end tests",
+            "Deploy and monitor performance",
+            "Document design decisions"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹6 LPA – ₹14 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Amazon",
+      "Google",
+      "Microsoft",
+      "Flipkart",
+      "Myntra",
+      "Swiggy",
+      "Zomato"
+    ],
+    "resources": {
+      "books": [
+        "You Don't Know JS",
+        "Designing with Web Standards",
+        "Refactoring UI (Adam Wathan)"
+      ],
+      "courses": [
+        "The Complete React Developer Course",
+        "Web Accessibility (Coursera/EdX)",
+        "Frontend Masters CSS/TS courses"
+      ],
+      "practiceWebsites": [
+        "Frontend Mentor",
+        "W3Schools",
+        "Web.dev",
+        "GitHub UI challenges"
+      ]
+    }
+  },
+  {
+    "slug": "backend-developer",
+    "name": "Backend Developer",
+    "description": "Create robust server-side systems and APIs. Own data modeling, authentication, performance, and reliability for production services.",
+    "requiredSkills": [
+      "Node.js/Java/Python",
+      "REST APIs",
+      "Database design",
+      "Caching",
+      "Authentication/Authorization",
+      "Queue/Background jobs",
+      "Observability",
+      "Testing",
+      "Security basics",
+      "Cloud deployment"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "API & Data Modeling (Weeks 1-5)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Design REST endpoints",
+            "Model relational data",
+            "Indexes and query optimization",
+            "Implement auth + roles"
+          ]
+        },
+        {
+          "title": "Reliability (Weeks 6-10)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Rate limiting",
+            "Idempotency for requests",
+            "Retries + backoff",
+            "Structured logging"
+          ]
+        },
+        {
+          "title": "Async & Scaling (Weeks 11-14)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Message queues / background tasks",
+            "Caching layers",
+            "Load testing basics",
+            "Horizontal scaling patterns"
+          ]
+        },
+        {
+          "title": "Capstone (Weeks 15-16)",
+          "duration": "2 weeks",
+          "bullets": [
+            "Build a production-like API",
+            "Add tests + docs",
+            "Deploy and monitor",
+            "Write a postmortem report"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹8 LPA – ₹20 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Netflix",
+      "Meta",
+      "Stripe",
+      "Paytm",
+      "PhonePe",
+      "Visa",
+      "Mastercard"
+    ],
+    "resources": {
+      "books": [
+        "Designing Data-Intensive Applications",
+        "The Pragmatic Programmer",
+        "Release It!"
+      ],
+      "courses": [
+        "Backend Development Bootcamp (Coursera/Udemy)",
+        "System Design Basics (YouTube)",
+        "Node.js API course"
+      ],
+      "practiceWebsites": [
+        "LeetCode",
+        "HackerRank",
+        "System Design Interview (GitHub)"
+      ]
+    }
+  },
+  {
+    "slug": "android-developer",
+    "name": "Android Developer",
+    "description": "Develop native Android apps with modern UI patterns, robust networking, and background work. Ship apps with strong performance and stability.",
+    "requiredSkills": [
+      "Kotlin",
+      "Android SDK",
+      "Jetpack Compose",
+      "Activities/Fragments",
+      "Retrofit/OkHttp",
+      "Coroutines",
+      "Room database",
+      "Testing",
+      "App architecture",
+      "Play Store deployment"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Kotlin + Android Basics (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Kotlin fundamentals",
+            "Android lifecycle",
+            "Layouts + Compose basics",
+            "Intents and navigation"
+          ]
+        },
+        {
+          "title": "Data & Networking (Weeks 5-8)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Retrofit APIs",
+            "Coroutines for async",
+            "Room persistence",
+            "Repository pattern"
+          ]
+        },
+        {
+          "title": "Quality & UX (Weeks 9-12)",
+          "duration": "4 weeks",
+          "bullets": [
+            "State management in Compose",
+            "Testing (unit + UI)",
+            "Offline support",
+            "Performance profiling"
+          ]
+        },
+        {
+          "title": "Publish + Portfolio (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Create 1-2 real apps",
+            "Set up CI/CD",
+            "Release to internal testing",
+            "Track crashes + analytics"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹7 LPA – ₹16 LPA",
+    "demandLevel": "Medium",
+    "companiesHiring": [
+      "Google",
+      "Amazon",
+      "Samsung",
+      "Paytm",
+      "PhonePe",
+      "Flipkart"
+    ],
+    "resources": {
+      "books": [
+        "Head First Kotlin",
+        "Android Programming: The Big Nerd Ranch Guide"
+      ],
+      "courses": [
+        "Android Developer Nanodegree",
+        "Jetpack Compose course (Udemy)",
+        "Kotlin Coroutines course"
+      ],
+      "practiceWebsites": [
+        "Android Developers samples",
+        "GitHub",
+        "LeetCode"
+      ]
+    }
+  },
+  {
+    "slug": "ios-developer",
+    "name": "iOS Developer",
+    "description": "Build iOS applications using Swift with clean architecture, responsive UI, and reliable networking. Focus on performance and user experience.",
+    "requiredSkills": [
+      "Swift",
+      "SwiftUI",
+      "UIKit basics",
+      "MVVM",
+      "URLSession",
+      "CoreData",
+      "Concurrency (async/await)",
+      "Testing (XCTest)",
+      "App Store deployment",
+      "Debugging",
+      "Performance"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Swift Essentials (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Swift language features",
+            "Optionals + value types",
+            "SwiftUI basics",
+            "Project setup"
+          ]
+        },
+        {
+          "title": "Networking & Persistence (Weeks 5-8)",
+          "duration": "4 weeks",
+          "bullets": [
+            "URLSession + decoding",
+            "Error handling patterns",
+            "CoreData/alternatives",
+            "Async/await in practice"
+          ]
+        },
+        {
+          "title": "Architectures & Testing (Weeks 9-12)",
+          "duration": "4 weeks",
+          "bullets": [
+            "MVVM and dependency injection",
+            "Write unit tests",
+            "UI tests",
+            "Handle edge cases"
+          ]
+        },
+        {
+          "title": "Portfolio + Release (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Ship 1-2 apps",
+            "Performance profiling",
+            "App Store metadata",
+            "Release and iterate"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹10 LPA – ₹22 LPA",
+    "demandLevel": "Medium",
+    "companiesHiring": [
+      "Apple",
+      "Google",
+      "Amazon",
+      "Uber",
+      "Swiggy"
+    ],
+    "resources": {
+      "books": [
+        "SwiftUI by Example",
+        "The Swift Programming Language"
+      ],
+      "courses": [
+        "SwiftUI Masterclass",
+        "iOS Concurrency (YouTube)",
+        "Clean Architecture for iOS"
+      ],
+      "practiceWebsites": [
+        "Ray Wenderlich tutorials",
+        "Apple Developer docs",
+        "LeetCode"
+      ]
+    }
+  },
+  {
+    "slug": "ai-ml-engineer",
+    "name": "AI/ML Engineer",
+    "description": "Design, train, and deploy machine learning models. Work on data pipelines, evaluation, model optimization, and production-grade inference.",
+    "requiredSkills": [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "Model evaluation",
+      "Feature engineering",
+      "PyTorch/TensorFlow",
+      "Data preprocessing",
+      "MLOps basics",
+      "Cloud GPUs",
+      "Experiment tracking"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "ML Foundations (Weeks 1-5)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Linear regression to tree models",
+            "Metrics (precision/recall/F1)",
+            "Feature preprocessing",
+            "Bias/variance intuition"
+          ]
+        },
+        {
+          "title": "Deep Learning (Weeks 6-10)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Neural networks",
+            "CNNs/RNNs basics",
+            "Transformers intro",
+            "Training stability"
+          ]
+        },
+        {
+          "title": "Projects (Weeks 11-14)",
+          "duration": "4 weeks",
+          "bullets": [
+            "NLP or vision project",
+            "Hyperparameter tuning",
+            "Error analysis",
+            "Model card"
+          ]
+        },
+        {
+          "title": "MLOps (Weeks 15-16)",
+          "duration": "2 weeks",
+          "bullets": [
+            "Deploy inference (FastAPI)",
+            "Use experiment tracking",
+            "Monitor drift",
+            "CI for models"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹12 LPA – ₹35 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Amazon",
+      "Microsoft",
+      "Google",
+      "PayPal",
+      "Flipkart",
+      "Zoho"
+    ],
+    "resources": {
+      "books": [
+        "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow",
+        "Deep Learning (Goodfellow)"
+      ],
+      "courses": [
+        "Andrew Ng ML course",
+        "DeepLearning.AI TensorFlow/PyTorch courses",
+        "MLOps course"
+      ],
+      "practiceWebsites": [
+        "Kaggle",
+        "Hugging Face",
+        "Papers with Code"
+      ]
+    }
+  },
+  {
+    "slug": "data-scientist",
+    "name": "Data Scientist",
+    "description": "Turn messy data into insights and predictive models. Build statistical/ML solutions, communicate findings, and drive data-informed decisions.",
+    "requiredSkills": [
+      "Statistics",
+      "Python",
+      "Data wrangling",
+      "EDA",
+      "Machine Learning",
+      "Experiment design",
+      "SQL",
+      "Visualization",
+      "Model deployment basics",
+      "Communication"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Data & Stats (Weeks 1-5)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Probability essentials",
+            "Distributions and sampling",
+            "EDA techniques",
+            "SQL mastery"
+          ]
+        },
+        {
+          "title": "Modeling (Weeks 6-10)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Regression & classification",
+            "Cross-validation",
+            "Feature importance",
+            "Calibrating models"
+          ]
+        },
+        {
+          "title": "Insights & Storytelling (Weeks 11-14)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Dashboards and narrative",
+            "Choosing metrics",
+            "A/B testing basics",
+            "Stakeholder communication"
+          ]
+        },
+        {
+          "title": "Capstone (Weeks 15-16)",
+          "duration": "2 weeks",
+          "bullets": [
+            "End-to-end project",
+            "Write technical blog",
+            "Portfolio deployment",
+            "Interview prep"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹12 LPA – ₹32 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Amazon",
+      "Netflix",
+      "Microsoft",
+      "Paytm",
+      "Zomato",
+      "CRED"
+    ],
+    "resources": {
+      "books": [
+        "Storytelling with Data (Cole Nussbaumer Knaflic)",
+        "The Elements of Statistical Learning",
+        "Practical Statistics for Data Scientists"
+      ],
+      "courses": [
+        "Data Science Specialization (Coursera)",
+        "SQL for Data Analysis (Coursera)",
+        "Machine Learning Zoomcamp"
+      ],
+      "practiceWebsites": [
+        "Kaggle",
+        "DataCamp",
+        "LeetCode"
+      ]
+    }
+  },
+  {
+    "slug": "data-analyst",
+    "name": "Data Analyst",
+    "description": "Analyze business data to uncover trends, build dashboards, and support decision-making. Focus on SQL, metrics, and clear visualization.",
+    "requiredSkills": [
+      "SQL",
+      "Excel/Sheets",
+      "Python (optional)",
+      "Data visualization",
+      "Metric design",
+      "A/B testing basics",
+      "Data cleaning",
+      "Storytelling",
+      "BI tools (Power BI/Tableau)",
+      "Stakeholder communication"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "SQL & Metrics (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "SELECT/JOIN/GROUP BY",
+            "Window functions",
+            "Building KPIs",
+            "Time-series basics"
+          ]
+        },
+        {
+          "title": "Visualization (Weeks 5-8)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Charts that tell a story",
+            "Dashboard design",
+            "Segmentation analysis",
+            "Cohort analysis"
+          ]
+        },
+        {
+          "title": "Automation (Weeks 9-12)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Python scripts for cleaning",
+            "ETL basics",
+            "Reproducible notebooks",
+            "Version control"
+          ]
+        },
+        {
+          "title": "Portfolio (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "3-4 dashboard projects",
+            "Write insight reports",
+            "Mock interviews",
+            "Publish case studies"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹5 LPA – ₹12 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Deloitte",
+      "PwC",
+      "EY",
+      "Amazon",
+      "Flipkart",
+      "Swiggy"
+    ],
+    "resources": {
+      "books": [
+        "Analyzing Data with Power BI",
+        "SQL in 10 Minutes (Socratica)"
+      ],
+      "courses": [
+        "Data Analytics (Coursera)",
+        "Tableau/Power BI tutorials",
+        "SQL analytics course"
+      ],
+      "practiceWebsites": [
+        "Mode Analytics",
+        "Kaggle datasets",
+        "LeetCode SQL"
+      ]
+    }
+  },
+  {
+    "slug": "devops-engineer",
+    "name": "DevOps Engineer",
+    "description": "Automate infrastructure and CI/CD pipelines. Improve reliability with monitoring, containerization, and infrastructure-as-code.",
+    "requiredSkills": [
+      "Linux",
+      "Docker",
+      "Kubernetes basics",
+      "CI/CD (GitHub Actions/Jenkins)",
+      "Terraform (or similar)",
+      "Monitoring (Prometheus/Grafana)",
+      "Networking",
+      "Cloud IAM",
+      "Scripting",
+      "Incident response"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Linux + Containers (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Linux shell basics",
+            "Docker images/volumes",
+            "Networking fundamentals",
+            "Compose setups"
+          ]
+        },
+        {
+          "title": "CI/CD (Weeks 5-8)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Build pipelines",
+            "Automate tests/builds",
+            "Environment variables & secrets",
+            "Release strategies"
+          ]
+        },
+        {
+          "title": "IaC + Monitoring (Weeks 9-12)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Terraform basics",
+            "Observability stack",
+            "Alerts & dashboards",
+            "Runbooks"
+          ]
+        },
+        {
+          "title": "Production Capstone (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Deploy a web service",
+            "Scale horizontally",
+            "Chaos testing basics",
+            "Write postmortem"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹10 LPA – ₹26 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Amazon",
+      "Google",
+      "Microsoft",
+      "Red Hat",
+      "Shopify",
+      "Flipkart"
+    ],
+    "resources": {
+      "books": [
+        "The DevOps Handbook",
+        "Site Reliability Engineering (if you can)",
+        "Terraform: Up & Running"
+      ],
+      "courses": [
+        "DevOps on Kubernetes (Udemy)",
+        "Terraform course",
+        "Docker deep dive"
+      ],
+      "practiceWebsites": [
+        "Kubernetes docs",
+        "GitHub Actions docs",
+        "Playground environments"
+      ]
+    }
+  },
+  {
+    "slug": "cloud-engineer",
+    "name": "Cloud Engineer",
+    "description": "Design cloud architectures, configure services, and optimize costs and performance. Work on security, availability, and scalable deployments.",
+    "requiredSkills": [
+      "AWS/GCP/Azure",
+      "Networking",
+      "IAM",
+      "Compute/Storage",
+      "Load balancing",
+      "Monitoring",
+      "Cost optimization",
+      "Security best practices",
+      "Scripting",
+      "Architecture"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Cloud Fundamentals (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "VPC/VNet concepts",
+            "IAM roles/policies",
+            "Compute and storage basics",
+            "Logging/metrics basics"
+          ]
+        },
+        {
+          "title": "Architecture & Scaling (Weeks 5-9)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Auto-scaling",
+            "CDN + caching",
+            "Data pipelines",
+            "Resilience patterns"
+          ]
+        },
+        {
+          "title": "Security & Compliance (Weeks 10-12)",
+          "duration": "3 weeks",
+          "bullets": [
+            "Threat modeling",
+            "Encryption practices",
+            "WAF/bastion patterns",
+            "Audit logging"
+          ]
+        },
+        {
+          "title": "Cert + Portfolio (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Prepare for cloud cert",
+            "Deploy reference architecture",
+            "Cost report",
+            "Document diagrams"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹10 LPA – ₹24 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "AWS",
+      "Google Cloud partners",
+      "Microsoft",
+      "Zoom",
+      "Shopify"
+    ],
+    "resources": {
+      "books": [
+        "AWS Certified Solutions Architect Study Guide",
+        "Cloud Architecture Patterns"
+      ],
+      "courses": [
+        "AWS Cloud Practitioner",
+        "AWS Solutions Architect",
+        "Google Cloud training"
+      ],
+      "practiceWebsites": [
+        "Cloud skill challenges",
+        "Qwiklabs",
+        "GitHub cloud examples"
+      ]
+    }
+  },
+  {
+    "slug": "cyber-security-analyst",
+    "name": "Cyber Security Analyst",
+    "description": "Protect systems and data by analyzing threats, monitoring logs, and responding to security incidents. Build practical security skills and threat awareness.",
+    "requiredSkills": [
+      "Networking fundamentals",
+      "Linux",
+      "OWASP",
+      "SIEM basics",
+      "Incident response",
+      "Vulnerability assessment",
+      "Threat modeling",
+      "Scripting",
+      "Secure coding",
+      "Authentication/crypto basics"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Security Basics (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "HTTP/HTTPS internals",
+            "Common attack vectors",
+            "OWASP Top 10",
+            "Secure coding principles"
+          ]
+        },
+        {
+          "title": "Hands-on Labs (Weeks 5-9)",
+          "duration": "5 weeks",
+          "bullets": [
+            "CTF practice",
+            "Web exploitation basics",
+            "Privilege escalation concepts",
+            "Write notes and reports"
+          ]
+        },
+        {
+          "title": "Defensive Operations (Weeks 10-12)",
+          "duration": "3 weeks",
+          "bullets": [
+            "Log analysis",
+            "SIEM dashboards",
+            "Detection engineering basics",
+            "Incident runbooks"
+          ]
+        },
+        {
+          "title": "Portfolio & Interviews (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Create writeups",
+            "Security audit project",
+            "Threat model doc",
+            "Interview practice"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹8 LPA – ₹20 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Deloitte",
+      "Accenture Security",
+      "CrowdStrike",
+      "Kaspersky",
+      "TCS",
+      "Infosys"
+    ],
+    "resources": {
+      "books": [
+        "The Web Application Hacker's Handbook",
+        "Security Engineering",
+        "Practical Malware Analysis"
+      ],
+      "courses": [
+        "TryHackMe learning paths",
+        "Security+ (CompTIA)",
+        "OWASP training"
+      ],
+      "practiceWebsites": [
+        "Hack The Box",
+        "TryHackMe",
+        "PortSwigger Web Security Academy"
+      ]
+    }
+  },
+  {
+    "slug": "blockchain-developer",
+    "name": "Blockchain Developer",
+    "description": "Develop decentralized applications and smart contracts. Build secure on-chain logic and integrate with off-chain services.",
+    "requiredSkills": [
+      "Solidity",
+      "Smart contract design",
+      "Security audits basics",
+      "Web3.js/Ethers",
+      "Ethereum basics",
+      "Testing (Hardhat)",
+      "IPFS",
+      "Security patterns",
+      "Token standards",
+      "DApp architecture"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Blockchain Fundamentals (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Consensus basics",
+            "Accounts and transactions",
+            "Gas and cost model",
+            "Wallet interactions"
+          ]
+        },
+        {
+          "title": "Smart Contracts (Weeks 5-8)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Solidity + inheritance",
+            "Events and logs",
+            "Access control",
+            "Testing contracts"
+          ]
+        },
+        {
+          "title": "DApps & Integration (Weeks 9-12)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Ethers.js + web UI",
+            "Oracles basics",
+            "Off-chain storage with IPFS",
+            "Indexing events"
+          ]
+        },
+        {
+          "title": "Security + Portfolio (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Read common vulnerabilities",
+            "Run basic audits",
+            "Deploy to testnet",
+            "Write documentation"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹10 LPA – ₹28 LPA",
+    "demandLevel": "Medium",
+    "companiesHiring": [
+      "Coinbase",
+      "Binance",
+      "Blockchain startups",
+      "Web3 consultancies"
+    ],
+    "resources": {
+      "books": [
+        "Mastering Ethereum (Andreas Antonopoulos)",
+        "Solidity Programming Essentials"
+      ],
+      "courses": [
+        "Alchemy University",
+        "Web3/Solidity courses (Udemy)",
+        "Smart contract security (courses)"
+      ],
+      "practiceWebsites": [
+        "Ethernaut",
+        "OpenZeppelin templates",
+        "Hardhat docs"
+      ]
+    }
+  },
+  {
+    "slug": "ui-ux-designer",
+    "name": "UI/UX Designer",
+    "description": "Create intuitive user experiences and high-quality interfaces. Combine research, interaction design, and visual design to deliver products users love.",
+    "requiredSkills": [
+      "User research",
+      "Wireframing",
+      "Prototyping",
+      "Design systems",
+      "Figma",
+      "Interaction design",
+      "Accessibility basics",
+      "Information architecture",
+      "Visual design",
+      "Usability testing"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Research & Fundamentals (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "User personas",
+            "Journey maps",
+            "Wireframe basics",
+            "Usability metrics"
+          ]
+        },
+        {
+          "title": "UI Design & Systems (Weeks 5-9)",
+          "duration": "5 weeks",
+          "bullets": [
+            "Typography + color theory",
+            "Components & spacing",
+            "Figma auto-layout",
+            "Design tokens"
+          ]
+        },
+        {
+          "title": "Prototyping & Testing (Weeks 10-12)",
+          "duration": "3 weeks",
+          "bullets": [
+            "Interactive prototypes",
+            "Usability testing sessions",
+            "Iterate based on feedback"
+          ]
+        },
+        {
+          "title": "Portfolio (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "2-3 strong case studies",
+            "Document decisions",
+            "Accessibility checklist",
+            "Present with story"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹6 LPA – ₹18 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Google",
+      "Meta",
+      "Microsoft",
+      "Flipkart",
+      "Shopify",
+      "Fintech startups"
+    ],
+    "resources": {
+      "books": [
+        "About Face (Alan Cooper)",
+        "Designing for Interaction",
+        "The Design of Everyday Things"
+      ],
+      "courses": [
+        "Google UX Design (Coursera)",
+        "Figma for Designers (courses)",
+        "Design Systems course"
+      ],
+      "practiceWebsites": [
+        "Dribbble",
+        "Behance",
+        "UX design blogs",
+        "Figma community templates"
+      ]
+    }
+  },
+  {
+    "slug": "qa-automation-engineer",
+    "name": "QA Automation Engineer",
+    "description": "Automate testing for web/mobile applications to ensure quality and faster releases. Build reliable test suites using modern tooling.",
+    "requiredSkills": [
+      "Test strategy",
+      "Selenium/Cypress/Playwright",
+      "JavaScript/TypeScript",
+      "API testing (Postman/REST Assured)",
+      "CI integration",
+      "Test data management",
+      "Bug reporting",
+      "Understanding of testing pyramid",
+      "Mocking",
+      "Debugging"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Testing Fundamentals (Weeks 1-4)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Testing concepts",
+            "Assertions and test structure",
+            "Writing clear test cases",
+            "Basic test environments"
+          ]
+        },
+        {
+          "title": "Automation Setup (Weeks 5-8)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Pick tool: Playwright/Cypress",
+            "Write stable selectors",
+            "Run tests in CI",
+            "Report results"
+          ]
+        },
+        {
+          "title": "API + E2E (Weeks 9-12)",
+          "duration": "4 weeks",
+          "bullets": [
+            "API tests",
+            "E2E flows with mocks",
+            "Test flakiness reduction",
+            "Parallelization basics"
+          ]
+        },
+        {
+          "title": "Portfolio (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Automate a sample product",
+            "Add regression suite",
+            "Write test maintenance guide",
+            "Interview readiness"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹6 LPA – ₹15 LPA",
+    "demandLevel": "Medium",
+    "companiesHiring": [
+      "Qualitest",
+      "TCS",
+      "Infosys QA teams",
+      "Wipro",
+      "Capgemini",
+      "Accenture"
+    ],
+    "resources": {
+      "books": [
+        "Effective Testing with Code",
+        "Continuous Delivery (if relevant)"
+      ],
+      "courses": [
+        "Playwright from Zero",
+        "Cypress testing course",
+        "API testing with Postman"
+      ],
+      "practiceWebsites": [
+        "The Internet (test site)",
+        "GitHub sample test repos",
+        "Sauce Labs resources"
+      ]
+    }
+  },
+  {
+    "slug": "software-engineer",
+    "name": "Software Engineer",
+    "description": "Build features across the stack with strong engineering fundamentals, clean code, and system thinking. Develop reliable software by combining algorithms, APIs, and UI.",
+    "requiredSkills": [
+      "Data structures & algorithms",
+      "Programming (Java/JS/Python)",
+      "System design basics",
+      "APIs",
+      "Databases",
+      "Git",
+      "Testing",
+      "Code reviews",
+      "Security basics",
+      "Debugging"
+    ],
+    "learningRoadmap": {
+      "phases": [
+        {
+          "title": "Foundations (Weeks 1-6)",
+          "duration": "6 weeks",
+          "bullets": [
+            "DSA basics",
+            "Clean code and refactoring",
+            "OO + design patterns",
+            "Build small utilities"
+          ]
+        },
+        {
+          "title": "Full-stack Practice (Weeks 7-12)",
+          "duration": "6 weeks",
+          "bullets": [
+            "Build a REST API",
+            "Integrate a frontend",
+            "Add auth and validation",
+            "Handle errors gracefully"
+          ]
+        },
+        {
+          "title": "System Design & Performance (Weeks 13-16)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Design small systems",
+            "Caching basics",
+            "DB indexing",
+            "Observability fundamentals"
+          ]
+        },
+        {
+          "title": "Portfolio & Interviews (Weeks 17-20)",
+          "duration": "4 weeks",
+          "bullets": [
+            "Ship a capstone",
+            "Write documentation",
+            "Mock interviews",
+            "Review common scenarios"
+          ]
+        }
+      ]
+    },
+    "salaryRange": "₹8 LPA – ₹24 LPA",
+    "demandLevel": "High",
+    "companiesHiring": [
+      "Google",
+      "Microsoft",
+      "Amazon",
+      "Walmart",
+      "Infosys",
+      "TCS"
+    ],
+    "resources": {
+      "books": ["Clean Code", "Grokking the System Design Interview", "Cracking the Coding Interview"],
+      "courses": ["Full Stack Open", "System Design (YouTube/educative)", "DSA courses"],
+      "practiceWebsites": ["LeetCode", "Codeforces", "HackerRank", "GitHub projects"]
+    }
+  }
+]
+

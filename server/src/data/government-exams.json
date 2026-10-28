@@ -3,51 +3,376 @@
     "name": "GATE",
     "slug": "gate",
     "category": "Higher Education",
-    "whoShouldTake": "Engineering students aiming for M.Tech at IITs/NITs, PSU jobs, research careers.",
-    "eligibility": "Final year or completed B.E./B.Tech/M.Sc",
+    "whoShouldTake": "Engineering, science, architecture, and humanities graduates pursuing postgraduate study, research, or eligible PSU recruitment.",
+    "eligibility": "Eligibility depends on the qualifying degree and current GATE information brochure; candidates in specified years of study may also apply.",
+    "pattern": {
+      "mode": "Computer-based test",
+      "duration": "3 hours",
+      "structure": "General Aptitude plus subject-specific test paper; paper combinations and marks are defined in the current brochure.",
+      "marking": "Question types and negative marking vary by question; check the current brochure."
+    },
+    "schedule": {
+      "status": "Annual schedule; confirm the next cycle on the official organizer website.",
+      "lastConfirmedCycle": "GATE 2026",
+      "lastConfirmedExamDates": ["7-8 February 2026", "14-15 February 2026"],
+      "note": "These are past-cycle dates, not upcoming dates. The official schedule says dates may change.",
+      "officialUrl": "https://gate2026.iitg.ac.in/important-dates.html"
+    },
     "syllabus": {
-      "CS": ["DSA","OS","DBMS","Networks","TOC","Compiler","Discrete Math","Aptitude"],
-      "ECE": ["Signals","Networks","EDC","Analog","Digital","Communication","EMT"]
+      "common": ["General Aptitude", "Engineering Mathematics where applicable"],
+      "CS": ["Programming and Data Structures", "Algorithms", "Operating Systems", "Databases", "Computer Networks", "Theory of Computation", "Compiler Design", "Digital Logic"],
+      "ECE": ["Engineering Mathematics", "Networks", "Signals and Systems", "Electronic Devices", "Analog and Digital Circuits", "Communications", "Electromagnetics"]
     },
     "difficulty": "Hard",
-    "opportunities": "M.Tech admissions, PSU jobs (IOCL, BHEL, NTPC), foreign university applications, research fellowships.",
-    "officialUrl": "https://gate.iitk.ac.in",
-    "tags": ["higher-ed","psu","research"]
+    "opportunities": "Postgraduate admission and research opportunities; some PSUs recruit through GATE scores, subject to each employer's notice.",
+    "officialUrl": "https://gate2026.iitg.ac.in/",
+    "tags": ["higher-education", "engineering", "psu", "research"]
   },
   {
     "name": "CAT",
     "slug": "cat",
     "category": "Higher Education",
-    "whoShouldTake": "Engineers seeking MBA at IIMs.",
-    "eligibility": "Bachelor's with 50%+ (45% for reserved)",
-    "syllabus": {"sections":["VARC","DILR","QA"]},
-    "difficulty":"Hard",
-    "opportunities":"MBA at IIMs, FMS, MDI, XLRI, SPJIMR — leads to consulting/product management roles.",
-    "officialUrl":"https://iimcat.ac.in",
-    "tags":["mba","management"]
+    "whoShouldTake": "Graduates seeking management programmes at IIMs and other participating institutions.",
+    "eligibility": "A bachelor's degree is generally required; minimum marks, category relaxations, and final-year rules follow the current CAT notification.",
+    "pattern": {
+      "mode": "Computer-based test",
+      "structure": "Verbal Ability and Reading Comprehension, Data Interpretation and Logical Reasoning, and Quantitative Ability.",
+      "duration": "Set by the current CAT notification",
+      "marking": "Question formats and scoring rules are specified in the current notification."
+    },
+    "schedule": {
+      "status": "Annual schedule; registration and test dates are published in the current CAT notification.",
+      "officialUrl": "https://iimcat.ac.in/"
+    },
+    "syllabus": {
+      "VARC": ["Reading comprehension", "Para summaries and completion", "Sentence rearrangement", "Verbal reasoning"],
+      "DILR": ["Tables and charts", "Caselets", "Arrangements", "Games and tournaments", "Logical reasoning"],
+      "QA": ["Arithmetic", "Algebra", "Geometry", "Number systems", "Modern mathematics"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Admission to MBA and related postgraduate programmes; selection also depends on each institution's shortlisting and interview process.",
+    "officialUrl": "https://iimcat.ac.in/",
+    "tags": ["management", "mba", "higher-education"]
   },
   {
     "name": "GRE",
     "slug": "gre",
     "category": "Higher Education",
-    "whoShouldTake": "Students planning MS abroad (US, Germany, Singapore).",
-    "eligibility":"No strict eligibility",
-    "syllabus":{"sections":["Verbal","Quant","AWA"]},
-    "difficulty":"Medium",
-    "opportunities":"MS/PhD in USA, Canada, Europe. Preferred by Stanford, CMU, Georgia Tech.",
-    "officialUrl":"https://ets.org/gre",
-    "tags":["ms-abroad","higher-ed"]
+    "whoShouldTake": "Students whose target graduate programmes accept or require GRE scores.",
+    "eligibility": "ETS does not set a general academic eligibility requirement; confirm each university's admission requirements.",
+    "pattern": {
+      "mode": "Computer-delivered test; availability varies by location",
+      "structure": "Analytical Writing, Verbal Reasoning, and Quantitative Reasoning.",
+      "duration": "Check the current ETS test description",
+      "marking": "Scores and section details are defined by ETS."
+    },
+    "schedule": {
+      "status": "Test availability and appointment dates depend on location; book through the official ETS site.",
+      "officialUrl": "https://www.ets.org/gre.html"
+    },
+    "syllabus": {
+      "Analytical Writing": ["Analyze an issue"],
+      "Verbal Reasoning": ["Reading comprehension", "Text completion", "Sentence equivalence"],
+      "Quantitative Reasoning": ["Arithmetic", "Algebra", "Geometry", "Data analysis"]
+    },
+    "difficulty": "Medium",
+    "opportunities": "Graduate programme applications where the institution accepts GRE scores; requirements differ by university and programme.",
+    "officialUrl": "https://www.ets.org/gre.html",
+    "tags": ["higher-education", "study-abroad", "graduate-admissions"]
   },
   {
-    "name": "ISRO Scientist",
+    "name": "UPSC Civil Services Examination",
+    "slug": "upsc-cse",
+    "category": "Government",
+    "whoShouldTake": "Graduates seeking recruitment to the civil services covered by the current UPSC notification.",
+    "eligibility": "A bachelor's degree is generally required. Age limits, attempts, relaxations, and service-specific conditions are governed by the current notification.",
+    "pattern": {
+      "stages": ["Civil Services Preliminary Examination", "Civil Services Main Examination", "Personality Test"],
+      "preliminary": "Objective papers; qualifying and merit rules are set by the current notification.",
+      "main": "Written papers including qualifying and merit papers as notified for that cycle."
+    },
+    "schedule": {
+      "status": "UPSC publishes an annual examination calendar; use the current calendar and exam notice for confirmed dates.",
+      "officialUrl": "https://upsc.gov.in/examinations/active-examinations"
+    },
+    "syllabus": {
+      "Preliminary": ["General Studies", "Current affairs", "History", "Geography", "Polity", "Economy", "Environment", "Science", "CSAT"],
+      "Main": ["Essay", "General Studies papers", "Optional subject", "Qualifying language papers"],
+      "Personality Test": ["Suitability for public service", "Awareness", "Reasoning and communication"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Recruitment to services listed in the current UPSC notification, subject to rank, preferences, vacancies, and eligibility.",
+    "officialUrl": "https://upsc.gov.in/",
+    "tags": ["civil-services", "government", "national"]
+  },
+  {
+    "name": "SSC Combined Graduate Level (CGL)",
+    "slug": "ssc-cgl",
+    "category": "Government",
+    "whoShouldTake": "Graduates interested in central government posts notified through SSC CGL.",
+    "eligibility": "A bachelor's degree is generally required; age limits, post-specific qualifications, and relaxations vary by post and current notification.",
+    "pattern": {
+      "mode": "Computer-based examinations",
+      "stages": "Tier structure and any post-specific tests are defined by the current SSC CGL notice.",
+      "subjects": ["Reasoning", "General Awareness", "Quantitative Aptitude", "English"]
+    },
+    "schedule": {
+      "status": "Dates and application windows are announced in the SSC calendar and cycle-specific notification.",
+      "officialUrl": "https://ssc.gov.in/"
+    },
+    "syllabus": {
+      "Reasoning": ["Analogy", "Series", "Coding-decoding", "Spatial reasoning"],
+      "Quantitative Aptitude": ["Arithmetic", "Algebra", "Geometry", "Statistics and data interpretation"],
+      "English": ["Comprehension", "Grammar", "Vocabulary"],
+      "General Awareness": ["History", "Geography", "Polity", "Economy", "Science", "Current affairs"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Recruitment to central government posts listed in the relevant SSC CGL vacancy notice.",
+    "officialUrl": "https://ssc.gov.in/",
+    "tags": ["ssc", "government", "graduate"]
+  },
+  {
+    "name": "IBPS Probationary Officer",
+    "slug": "ibps-po",
+    "category": "Banking",
+    "whoShouldTake": "Graduates seeking probationary officer roles at participating public sector banks.",
+    "eligibility": "Graduation and age criteria are set in the current IBPS notification; category relaxations and document rules apply.",
+    "pattern": {
+      "stages": ["Preliminary examination", "Main examination", "Interview"],
+      "subjects": ["English", "Quantitative Aptitude", "Reasoning", "General/Economy/Banking Awareness", "Data Analysis and Interpretation"],
+      "marking": "Sections, timing, and penalties are set by the current notification."
+    },
+    "schedule": {
+      "status": "IBPS publishes an annual calendar and separate recruitment notifications; verify the current cycle.",
+      "officialUrl": "https://www.ibps.in/"
+    },
+    "syllabus": {
+      "Preliminary": ["English Language", "Quantitative Aptitude", "Reasoning Ability"],
+      "Main": ["Reasoning", "Data Analysis and Interpretation", "English", "General/Economy/Banking Awareness"],
+      "Interview": ["Banking awareness", "Communication", "Profile-based questions"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Probationary officer recruitment at participating banks, subject to that year's participating-bank list and vacancies.",
+    "officialUrl": "https://www.ibps.in/",
+    "tags": ["banking", "ibps", "government"]
+  },
+  {
+    "name": "SBI Probationary Officer",
+    "slug": "sbi-po",
+    "category": "Banking",
+    "whoShouldTake": "Graduates interested in officer recruitment at State Bank of India.",
+    "eligibility": "Degree, age, category relaxation, and final-year conditions must be checked in the current SBI recruitment notice.",
+    "pattern": {
+      "stages": ["Preliminary examination", "Main examination", "Psychometric assessment/interview or group exercise as notified"],
+      "subjects": ["English", "Quantitative Aptitude", "Reasoning", "Data Analysis", "Banking and General Awareness"],
+      "marking": "The current notification defines the structure and selection weights."
+    },
+    "schedule": {
+      "status": "SBI announces vacancies and dates through individual recruitment notices; no fixed annual exam date.",
+      "officialUrl": "https://sbi.co.in/web/careers"
+    },
+    "syllabus": {
+      "Preliminary": ["English", "Quantitative Aptitude", "Reasoning"],
+      "Main": ["Reasoning and Computer Aptitude", "Data Analysis", "English", "General/Economy/Banking Awareness"],
+      "Interview": ["Current affairs", "Banking knowledge", "Communication"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Officer recruitment at SBI when notified; vacancies and service conditions vary by recruitment cycle.",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "tags": ["banking", "sbi", "government"]
+  },
+  {
+    "name": "RRB NTPC",
+    "slug": "rrb-ntpc",
+    "category": "Railway",
+    "whoShouldTake": "Candidates seeking railway non-technical posts listed in an RRB NTPC recruitment notice.",
+    "eligibility": "Educational qualifications and age limits depend on the post level and current notification; check the official CEN notice.",
+    "pattern": {
+      "stages": ["Computer-based tests", "Skill or aptitude test for applicable posts", "Document verification and medical examination"],
+      "subjects": ["General Awareness", "Mathematics", "General Intelligence and Reasoning"],
+      "marking": "Stage structure and negative marking are defined by the current CEN."
+    },
+    "schedule": {
+      "status": "Recruitment calendars and exam dates are issued by Railway Recruitment Boards; verify the current CEN and regional RRB notices.",
+      "officialUrl": "https://www.rrbcdg.gov.in/"
+    },
+    "syllabus": {
+      "General Awareness": ["Current events", "History", "Geography", "Polity", "Economy", "General science"],
+      "Mathematics": ["Number system", "Arithmetic", "Algebra", "Geometry", "Statistics"],
+      "Reasoning": ["Analogies", "Series", "Puzzles", "Data sufficiency", "Statements"]
+    },
+    "difficulty": "Medium",
+    "opportunities": "Railway posts included in the applicable NTPC Centralised Employment Notice.",
+    "officialUrl": "https://www.rrbcdg.gov.in/",
+    "tags": ["railway", "rrb", "government"]
+  },
+  {
+    "name": "JEE Main",
+    "slug": "jee-main",
+    "category": "Higher Education",
+    "whoShouldTake": "Students applying to NITs, IIITs, other participating institutions, or JEE Advanced subject to eligibility.",
+    "eligibility": "Attempt limits, year-of-passing conditions, and admission criteria are defined by the current NTA and institution notices.",
+    "pattern": {
+      "mode": "Computer-based test",
+      "subjects": ["Physics", "Chemistry", "Mathematics"],
+      "sessions": "Session count, paper structure, duration, and scoring are specified in the current information bulletin."
+    },
+    "schedule": {
+      "status": "NTA publishes session dates and application windows in the current JEE Main information bulletin.",
+      "officialUrl": "https://jeemain.nta.nic.in/"
+    },
+    "syllabus": {
+      "Physics": ["Mechanics", "Thermal physics", "Electrodynamics", "Optics", "Modern physics"],
+      "Chemistry": ["Physical chemistry", "Inorganic chemistry", "Organic chemistry"],
+      "Mathematics": ["Algebra", "Calculus", "Coordinate geometry", "Vectors and 3D geometry", "Probability"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Admission consideration at participating institutions according to current counselling rules and institute eligibility.",
+    "officialUrl": "https://jeemain.nta.nic.in/",
+    "tags": ["engineering", "entrance", "nta"]
+  },
+  {
+    "name": "JEE Advanced",
+    "slug": "jee-advanced",
+    "category": "Higher Education",
+    "whoShouldTake": "Eligible JEE Main candidates seeking undergraduate admission at IITs.",
+    "eligibility": "Shortlisting, attempt limits, age, qualifying examination, and subject requirements are defined by the current JEE Advanced brochure.",
+    "pattern": {
+      "mode": "Computer-based test",
+      "papers": "Two compulsory papers; question formats and marking rules may vary by paper and year.",
+      "subjects": ["Physics", "Chemistry", "Mathematics"]
+    },
+    "schedule": {
+      "status": "The organizing IIT publishes the current year's dates and information brochure.",
+      "officialUrl": "https://jeeadv.ac.in/"
+    },
+    "syllabus": {
+      "Physics": ["Mechanics", "Thermal physics", "Electricity and magnetism", "Optics", "Modern physics"],
+      "Chemistry": ["Physical chemistry", "Inorganic chemistry", "Organic chemistry"],
+      "Mathematics": ["Algebra", "Trigonometry", "Analytical geometry", "Differential and integral calculus"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "IIT undergraduate programmes through the applicable joint seat allocation process.",
+    "officialUrl": "https://jeeadv.ac.in/",
+    "tags": ["engineering", "iit", "entrance"]
+  },
+  {
+    "name": "UGC NET",
+    "slug": "ugc-net",
+    "category": "Higher Education",
+    "whoShouldTake": "Postgraduate candidates pursuing eligibility for Assistant Professor, Junior Research Fellowship, or doctoral admission categories as notified.",
+    "eligibility": "Qualification, minimum marks, age limits for JRF, exemptions, and category rules are defined by the current NTA bulletin.",
+    "pattern": {
+      "mode": "Computer-based test",
+      "papers": "Paper I (teaching/research aptitude) and Paper II (chosen subject); check the current bulletin for duration and marking."
+    },
+    "schedule": {
+      "status": "NTA announces examination cycles and dates through official UGC NET notices.",
+      "officialUrl": "https://ugcnet.nta.ac.in/"
+    },
+    "syllabus": {
+      "Paper I": ["Teaching aptitude", "Research aptitude", "Comprehension", "Communication", "Reasoning", "Data interpretation", "Higher education"],
+      "Paper II": ["Subject-specific syllabus published by UGC/NTA"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Eligibility outcomes for teaching, research, and doctoral admission as defined for the result category and current rules.",
+    "officialUrl": "https://ugcnet.nta.ac.in/",
+    "tags": ["ugc", "research", "higher-education"]
+  },
+  {
+    "name": "NEET UG",
+    "slug": "neet-ug",
+    "category": "Higher Education",
+    "whoShouldTake": "Eligible candidates seeking undergraduate medical admissions through the NEET UG process.",
+    "eligibility": "Subjects, qualifying examination, age, and category requirements are set in the current NTA information bulletin and applicable regulations.",
+    "pattern": {
+      "mode": "As notified by NTA for the current cycle",
+      "subjects": ["Physics", "Chemistry", "Biology (Botany and Zoology)"],
+      "marking": "Question count, duration, and scoring must be checked in the current bulletin."
+    },
+    "schedule": {
+      "status": "NTA publishes application and examination dates in the current information bulletin.",
+      "officialUrl": "https://neet.nta.nic.in/"
+    },
+    "syllabus": {
+      "Physics": ["Class 11 and 12 topics in the current syllabus"],
+      "Chemistry": ["Physical, inorganic, and organic chemistry in the current syllabus"],
+      "Biology": ["Botany and zoology topics in the current syllabus"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Admission counselling for medical programmes under applicable national and state processes.",
+    "officialUrl": "https://neet.nta.nic.in/",
+    "tags": ["medical", "entrance", "nta"]
+  },
+  {
+    "name": "CUET UG",
+    "slug": "cuet-ug",
+    "category": "Higher Education",
+    "whoShouldTake": "Students applying to universities and programmes participating in CUET UG.",
+    "eligibility": "Programme-specific subject, age, and qualifying requirements are determined by each participating university and the current CUET bulletin.",
+    "pattern": {
+      "mode": "As specified in the current NTA bulletin",
+      "sections": ["Language", "Domain subjects", "General aptitude test where applicable"],
+      "selection": "Subject combinations and score requirements vary by university and programme."
+    },
+    "schedule": {
+      "status": "NTA publishes the current cycle dates and subject information in its CUET UG bulletin.",
+      "officialUrl": "https://cuet.nta.nic.in/"
+    },
+    "syllabus": {
+      "Language": ["Reading comprehension", "Vocabulary", "Language skills"],
+      "Domain subjects": ["Subject syllabi aligned to the notified curriculum"],
+      "General aptitude": ["General knowledge", "Reasoning", "Quantitative aptitude", "Current affairs"]
+    },
+    "difficulty": "Medium",
+    "opportunities": "Admission consideration at participating universities under their published programme-specific rules.",
+    "officialUrl": "https://cuet.nta.nic.in/",
+    "tags": ["university-admission", "entrance", "nta"]
+  },
+  {
+    "name": "ISRO Scientist/Engineer Recruitment",
     "slug": "isro",
     "category": "Government",
-    "whoShouldTake":"Engineers passionate about space & aerospace research.",
-    "eligibility":"B.E./B.Tech with 65%/6.84 CGPA in CS/ECE/Mech/EEE",
-    "syllabus":{"topics":["Core subjects of your branch","Aptitude"]},
-    "difficulty":"Hard",
-    "opportunities":"Scientist/Engineer 'SC' role at ISRO centres; work on satellites, rockets, launch vehicles.",
-    "officialUrl":"https://isro.gov.in/Careers.html",
-    "tags":["research","government","aerospace"]
+    "whoShouldTake": "Engineering graduates interested in technical roles at ISRO.",
+    "eligibility": "Disciplines, degree requirements, marks, age, and selection method vary by recruitment advertisement.",
+    "pattern": {
+      "selection": "Written test and/or other stages as stated in the specific recruitment advertisement.",
+      "subjects": "Branch-specific engineering topics and any other sections listed in the advertisement."
+    },
+    "schedule": {
+      "status": "Recruitment is advertisement-based; there is no fixed exam date applicable to every post.",
+      "officialUrl": "https://www.isro.gov.in/Careers.html"
+    },
+    "syllabus": {
+      "Engineering": ["Core subjects for the advertised discipline"],
+      "Other sections": ["Only as specified in the current recruitment advertisement"]
+    },
+    "difficulty": "Hard",
+    "opportunities": "Scientist/Engineer and other technical posts advertised by ISRO centres.",
+    "officialUrl": "https://www.isro.gov.in/Careers.html",
+    "tags": ["research", "government", "space", "engineering"]
+  },
+  {
+    "name": "DRDO CEPTAM",
+    "slug": "drdo-ceptam",
+    "category": "Government",
+    "whoShouldTake": "Candidates seeking technical and administrative roles advertised by DRDO through CEPTAM.",
+    "eligibility": "Qualification, discipline, age, and selection stages are post-specific; use the current DRDO advertisement.",
+    "pattern": {
+      "stages": "Tier and skill/trade tests depend on the post and current advertisement.",
+      "subjects": "Technical topics, reasoning, quantitative aptitude, or general awareness as specified for the post."
+    },
+    "schedule": {
+      "status": "Recruitment is notification-based; check DRDO's current vacancies for dates.",
+      "officialUrl": "https://www.drdo.gov.in/drdo/careers"
+    },
+    "syllabus": {
+      "Technical posts": ["Trade or discipline-specific knowledge"],
+      "Common areas where notified": ["Reasoning", "Quantitative aptitude", "English", "General awareness"]
+    },
+    "difficulty": "Medium",
+    "opportunities": "Technical and support positions listed in current DRDO CEPTAM notifications.",
+    "officialUrl": "https://www.drdo.gov.in/drdo/careers",
+    "tags": ["defence", "research", "government"]
   }
 ]

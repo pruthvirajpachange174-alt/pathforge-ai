@@ -1,3 +1,4 @@
+/** Handles API requests for Hackathon Controller. */
 import { Response } from 'express';
 import { prisma } from '../config/db';
 import { AuthRequest } from '../middleware/auth.middleware';
@@ -19,7 +20,7 @@ export const listHackathons = asyncHandler(async (req: AuthRequest, res: Respons
 });
 
 export const getHackathon = asyncHandler(async (req: AuthRequest, res: Response) => {
-  const h = await prisma.hackathon.findUnique({ where: { slug: req.params.slug } });
+  const h = await prisma.hackathon.findUnique({ where: { slug: String(req.params.slug) } });
   if (!h) return res.status(404).json({ message: 'Not found' });
   res.json({ success: true, data: h });
 });

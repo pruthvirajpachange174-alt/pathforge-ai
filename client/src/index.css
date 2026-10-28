@@ -1,3 +1,4 @@
+/* Global Tailwind layers, theme tokens, and shared client styling. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,10 +32,10 @@ body {
 
 @layer components {
   .glass {
-    @apply backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] border border-black/5 dark:border-white/10 shadow-lg;
+    @apply bg-white/80 dark:bg-neutral-900/90 border border-black/5 dark:border-white/10 shadow-lg;
   }
   .glass-strong {
-    @apply backdrop-blur-2xl bg-white/80 dark:bg-white/[0.06] border border-black/5 dark:border-white/10 shadow-xl;
+    @apply bg-white/95 dark:bg-neutral-900/95 border border-black/5 dark:border-white/10 shadow-xl;
   }
   .gradient-text {
     @apply bg-gradient-to-r from-brand-500 via-fuchsia-500 to-cyanx-500 bg-clip-text text-transparent;
@@ -46,3 +47,27 @@ body {
 
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-thumb { background: rgba(139,92,246,0.4); border-radius: 10px; }
+
+.chat-markdown pre code.hljs {
+  display: block;
+  background: #0d1117;
+  color: #e6edf3;
+}
+.chat-markdown .hljs-comment,
+.chat-markdown .hljs-quote { color: #8b949e; }
+.chat-markdown .hljs-keyword,
+.chat-markdown .hljs-selector-tag,
+.chat-markdown .hljs-literal { color: #ff7b72; }
+.chat-markdown .hljs-string,
+.chat-markdown .hljs-attr { color: #a5d6ff; }
+.chat-markdown .hljs-number,
+.chat-markdown .hljs-built_in { color: #79c0ff; }
+.chat-markdown .hljs-title,
+.chat-markdown .hljs-function { color: #d2a8ff; }
+.chat-markdown .hljs-variable,
+.chat-markdown .hljs-params { color: #ffa657; }
+.chat-markdown .hljs-type,
+.chat-markdown .hljs-class { color: #f2cc60; }
+.chat-user-message .chat-markdown p,
+.chat-user-message .chat-markdown li,
+.chat-user-message .chat-markdown strong { color: #fff; }

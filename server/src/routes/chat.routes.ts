@@ -1,3 +1,4 @@
+/** Defines API routes for Chat Routes. */
 import { Router } from 'express';
 import { requireAuth } from '../middleware/auth.middleware';
 import { chatLimiter } from '../middleware/rateLimit.middleware';

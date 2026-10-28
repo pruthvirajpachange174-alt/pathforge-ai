@@ -1,0 +1,41 @@
+Idea
+
+↓
+
+Prisma Model
+
+↓
+
+Migration
+
+↓
+
+Seed
+
+↓
+
+Database
+
+↓
+
+Controller
+
+↓
+
+Route
+
+↓
+
+Browser Test
+
+↓
+
+React Page
+
+↓
+
+API Call
+
+↓
+
+Cards

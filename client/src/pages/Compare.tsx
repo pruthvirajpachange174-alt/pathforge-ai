@@ -1,3 +1,4 @@
+/** Renders the Compare application page. */
 import { GlassCard } from '@/components/common/GlassCard';
 import { motion } from 'framer-motion';
 

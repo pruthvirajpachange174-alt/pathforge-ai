@@ -2,116 +2,293 @@
   {
     "company": "TCS",
     "slug": "tcs-nqt",
-    "eligibility": "60% or above in 10th, 12th, and UG; No active backlogs; Any B.E./B.Tech/M.E./M.Tech/MCA/M.Sc branch",
+    "eligibility": "TCS hiring criteria vary by role, degree, academic record, and drive. Follow the eligibility in the current TCS job posting or campus notice.",
     "examPattern": {
-      "sections": ["Verbal", "Reasoning", "Numerical", "Coding (2 problems)"],
-      "duration": "180 min",
-      "mode": "Online"
+      "sections": ["Numerical ability", "Reasoning", "Verbal ability", "Programming or coding where applicable"],
+      "duration": "Set by the current hiring assessment",
+      "mode": "Online assessment; stages vary by role and drive",
+      "schedule": "TCS recruitment is role- and drive-based; there is no single annual exam date. Confirm the application window in the official careers portal."
     },
     "difficulty": "Medium",
-    "topics": ["DSA", "Aptitude", "Verbal", "SQL", "OOP"],
+    "topics": ["Quantitative aptitude", "Logical reasoning", "Verbal ability", "Programming", "Data structures", "SQL", "OOP"],
     "roadmap": {
-      "week1": "Aptitude + Verbal",
-      "week2": "Reasoning + Basic DSA",
-      "week3": "Coding practice (Arrays, Strings)",
-      "week4": "Mock tests + Interview prep"
+      "Weeks 1-2": "Refresh arithmetic, reasoning, and communication fundamentals.",
+      "Weeks 3-4": "Practise coding, debugging, SQL, and core programming concepts.",
+      "Weeks 5-6": "Take timed mocks and prepare project explanations and interview examples."
     },
-    "previousTrends": "Coding questions medium difficulty; strong focus on OOP + SQL in interviews.",
+    "previousTrends": "Assessment sections and hiring bands vary by drive; use recent candidate instructions only as preparation guidance, not a guaranteed pattern.",
     "resources": {
-      "practice": ["PrepInsta", "GFG TCS NQT", "IndiaBIX"],
-      "books": ["R.S. Aggarwal Quantitative Aptitude"]
+      "practice": ["IndiaBIX", "HackerRank", "GeeksforGeeks"],
+      "books": ["Quantitative Aptitude by R. S. Aggarwal"],
+      "officialSource": "https://www.tcs.com/careers/india"
     },
-    "expectedSalary": "₹3.36 LPA (Ninja) / ₹7 LPA (Digital) / ₹11.5 LPA (Prime)",
+    "expectedSalary": "Compensation varies by role, hiring band, location, and offer; check the current TCS posting.",
     "hiringProcess": {
-      "rounds": ["NQT Exam", "Technical Interview", "Managerial", "HR"]
+      "rounds": ["Application or campus nomination", "Online assessment where used", "Technical and/or managerial interview", "HR discussion and verification as applicable"],
+      "note": "The process varies by role and recruitment drive."
     },
-    "tags": ["service-based", "mass-recruiter", "beginner-friendly"]
-  },
-  {
-    "company": "Google",
-    "slug": "google",
-    "eligibility": "Strong CS fundamentals; Top-tier DSA; Ongoing/completed B.Tech/M.Tech/PhD",
-    "examPattern": {
-      "sections": ["Online Assessment (2 DSA problems, 90 min)", "4-5 technical interviews", "Googleyness"],
-      "duration": "Multi-round",
-      "mode": "Online + Onsite"
-    },
-    "difficulty": "Hard",
-    "topics": ["Advanced DSA", "System Design", "OS", "Networks", "DBMS", "Behavioral"],
-    "roadmap": {
-      "month1-2": "LeetCode 200+ (medium-hard); Cracking the Coding Interview",
-      "month3": "System Design (Grokking, DDIA)",
-      "month4": "Mock interviews on Pramp/Interviewing.io"
-    },
-    "previousTrends": "Focus on graphs, DP, trees; behavioral 'Googleyness' round matters.",
-    "resources": {
-      "practice": ["LeetCode", "Codeforces", "Google Tech Dev Guide"],
-      "books": ["CLRS", "Designing Data-Intensive Applications"]
-    },
-    "expectedSalary": "₹25-50 LPA (SWE-I)",
-    "hiringProcess": {
-      "rounds": ["OA", "Phone Screen", "4-5 Onsite Interviews", "Hiring Committee"]
-    },
-    "tags": ["FAANG", "high-paying", "hard"]
-  },
-  {
-    "company": "Amazon",
-    "slug": "amazon",
-    "eligibility": "CGPA 7+; strong DSA; any engineering branch",
-    "examPattern": {
-      "sections": ["OA (2 coding + work simulation + Amazon values)", "3-4 Interviews (LP-based)"],
-      "duration": "Multi-round",
-      "mode": "Online + Onsite"
-    },
-    "difficulty": "Hard",
-    "topics": ["DSA", "Leadership Principles", "System Design", "OOP"],
-    "roadmap": {
-      "month1": "LeetCode Amazon tagged 150 problems",
-      "month2": "Leadership Principles + STAR stories",
-      "month3": "Mock interviews"
-    },
-    "previousTrends": "Behavioral interviews on 16 LPs are decisive.",
-    "resources": {
-      "practice": ["LeetCode Amazon list", "Amazon.jobs interview prep"]
-    },
-    "expectedSalary": "₹19-44 LPA (SDE-1)",
-    "hiringProcess": {"rounds": ["OA","3-4 Interviews","Bar Raiser"]},
-    "tags": ["FAANG", "high-paying"]
+    "tags": ["india", "service-based", "campus-hiring", "aptitude", "coding"]
   },
   {
     "company": "Infosys",
     "slug": "infosys",
-    "eligibility": "60%+ throughout; No standing arrears",
+    "eligibility": "Degree, graduation year, academic scores, backlogs, and role requirements are defined by the current Infosys job posting or campus drive.",
     "examPattern": {
-      "sections": ["Aptitude","Reasoning","Verbal","Pseudocode","Puzzles","2 Coding Problems"],
-      "duration": "150 min",
-      "mode": "Online"
+      "sections": ["Reasoning and aptitude", "Verbal ability", "Programming or pseudocode", "Coding where applicable"],
+      "duration": "Set by the current hiring assessment",
+      "mode": "Online assessment and interviews; stages vary by role",
+      "schedule": "Recruitment windows and assessment dates are published per role or campus drive."
     },
     "difficulty": "Medium",
-    "topics": ["Aptitude","Pseudocode","Basic DSA","OOP"],
+    "topics": ["Aptitude", "Reasoning", "Verbal", "Programming fundamentals", "DSA", "OOP", "SQL"],
     "roadmap": {
-      "week1-2": "Aptitude + Pseudocode",
-      "week3": "DSA basics",
-      "week4": "Mock tests"
+      "Weeks 1-2": "Build speed in arithmetic, reasoning, and reading comprehension.",
+      "Weeks 3-4": "Practise pseudocode, programming fundamentals, and basic DSA.",
+      "Weeks 5-6": "Complete timed assessments and prepare project and HR responses."
     },
-    "previousTrends": "Puzzle section can trip beginners.",
-    "resources": {"practice":["PrepInsta Infosys","HackWithInfy archives"]},
-    "expectedSalary": "₹3.6 LPA (SE) / ₹6.5 LPA (Digital SE) / ₹9 LPA (Power Programmer)",
-    "hiringProcess": {"rounds":["Online Test","Technical Interview","HR"]},
-    "tags": ["service-based","mass-recruiter"]
+    "previousTrends": "Test format and role bands change between drives. Treat third-party question sets as practice rather than official exam specifications.",
+    "resources": {
+      "practice": ["HackerRank", "GeeksforGeeks", "IndiaBIX"],
+      "officialSource": "https://www.infosys.com/careers/"
+    },
+    "expectedSalary": "Compensation depends on role, location, and offer; use the current Infosys vacancy details.",
+    "hiringProcess": {
+      "rounds": ["Application or campus nomination", "Assessment where applicable", "Technical interview", "HR discussion and verification as applicable"],
+      "note": "The process is role- and drive-specific."
+    },
+    "tags": ["india", "service-based", "campus-hiring", "aptitude", "coding"]
+  },
+  {
+    "company": "Wipro",
+    "slug": "wipro",
+    "eligibility": "Academic, degree, graduation-year, and backlog criteria vary by position and hiring campaign; check the live role notice.",
+    "examPattern": {
+      "sections": ["Aptitude and reasoning", "Verbal ability", "Coding or technical assessment where applicable"],
+      "duration": "Defined for each assessment",
+      "mode": "Online assessment and interviews; may vary by hiring programme",
+      "schedule": "Wipro publishes vacancies and application timelines through its careers site; no universal annual test date."
+    },
+    "difficulty": "Medium",
+    "topics": ["Quantitative aptitude", "Logical reasoning", "English", "Programming", "DSA", "OOP", "DBMS"],
+    "roadmap": {
+      "Weeks 1-2": "Revise aptitude, verbal, and logical reasoning.",
+      "Weeks 3-4": "Practise one programming language, DSA basics, and SQL.",
+      "Weeks 5-6": "Take timed mocks and prepare technical and behavioural examples."
+    },
+    "previousTrends": "Hiring assessments are campaign-specific; verify the current instructions before relying on any reported section or duration.",
+    "resources": {
+      "practice": ["HackerRank", "GeeksforGeeks", "IndiaBIX"],
+      "officialSource": "https://careers.wipro.com/"
+    },
+    "expectedSalary": "Role- and location-dependent; refer to the current Wipro vacancy and offer terms.",
+    "hiringProcess": {
+      "rounds": ["Application", "Assessment where applicable", "Technical interview", "HR discussion and verification as applicable"],
+      "note": "Stages depend on the position and hiring campaign."
+    },
+    "tags": ["india", "service-based", "campus-hiring", "aptitude"]
+  },
+  {
+    "company": "Accenture",
+    "slug": "accenture",
+    "eligibility": "Degree, graduation year, location, skills, and work-authorisation criteria are specific to each Accenture role.",
+    "examPattern": {
+      "sections": ["Online assessment or skills screening where applicable", "Technical and behavioural interviews"],
+      "duration": "Set by the vacancy and assessment provider",
+      "mode": "Online and/or interviewer-led; role-dependent",
+      "schedule": "Applications are tied to individual vacancies; check the live listing for closing dates and assessment stages."
+    },
+    "difficulty": "Medium",
+    "topics": ["Programming", "Problem solving", "Cloud and platform fundamentals", "Communication", "Role-specific skills"],
+    "roadmap": {
+      "Weeks 1-2": "Choose a target role and map its required skills.",
+      "Weeks 3-4": "Practise relevant coding or technical scenarios and explain project decisions.",
+      "Weeks 5-6": "Prepare behavioural examples and rehearse role-specific interviews."
+    },
+    "previousTrends": "There is no single Accenture assessment pattern across all roles; follow the invitation for the vacancy you applied to.",
+    "resources": {
+      "practice": ["HackerRank", "LeetCode", "Role-specific learning resources"],
+      "officialSource": "https://www.accenture.com/in-en/careers"
+    },
+    "expectedSalary": "Varies by role, level, location, and offer; see the specific job listing.",
+    "hiringProcess": {
+      "rounds": ["Application", "Assessment or screening where applicable", "Interview rounds", "Offer and verification"],
+      "note": "The number and format of stages vary by position."
+    },
+    "tags": ["india", "consulting", "technology", "early-careers"]
+  },
+  {
+    "company": "Cognizant",
+    "slug": "cognizant",
+    "eligibility": "Academic and degree requirements depend on the position and campus campaign; confirm them in the current Cognizant notice.",
+    "examPattern": {
+      "sections": ["Aptitude or communication assessment where used", "Technical assessment", "Interview"],
+      "duration": "Defined by the current campaign",
+      "mode": "Online assessment and interviews; campaign-dependent",
+      "schedule": "Dates are published per vacancy or campus drive."
+    },
+    "difficulty": "Medium",
+    "topics": ["Aptitude", "Communication", "Programming", "DSA", "SQL", "OOP", "Cloud fundamentals"],
+    "roadmap": {
+      "Weeks 1-2": "Revise aptitude and communication basics.",
+      "Weeks 3-4": "Practise coding, SQL, and role-relevant technical fundamentals.",
+      "Weeks 5-6": "Complete mock assessments and prepare concise project explanations."
+    },
+    "previousTrends": "Assessment content and stages vary by role and drive; no fixed pattern is guaranteed.",
+    "resources": {
+      "practice": ["HackerRank", "GeeksforGeeks", "IndiaBIX"],
+      "officialSource": "https://careers.cognizant.com/india-en/"
+    },
+    "expectedSalary": "Varies by role, location, and hiring programme; refer to the current posting.",
+    "hiringProcess": {
+      "rounds": ["Application or campus nomination", "Assessment where applicable", "Technical and/or behavioural interviews", "Offer checks"],
+      "note": "Confirm the current selection stages with the recruiting notice."
+    },
+    "tags": ["india", "service-based", "campus-hiring"]
+  },
+  {
+    "company": "Capgemini",
+    "slug": "capgemini",
+    "eligibility": "Degree, academic, graduation-year, and backlog conditions vary by role and campus drive.",
+    "examPattern": {
+      "sections": ["Aptitude and communication where applicable", "Technical assessment or coding where applicable", "Interviews"],
+      "duration": "Specified by the active hiring campaign",
+      "mode": "Online and/or interview rounds",
+      "schedule": "Recruitment and assessment dates are vacancy-specific; use Capgemini's official careers listing."
+    },
+    "difficulty": "Medium",
+    "topics": ["Quantitative aptitude", "Logical reasoning", "English", "Programming", "DSA", "OOP", "SQL"],
+    "roadmap": {
+      "Weeks 1-2": "Practise quantitative, verbal, and logical reasoning.",
+      "Weeks 3-4": "Revise programming fundamentals, DSA, and SQL.",
+      "Weeks 5-6": "Take timed practice tests and prepare interview examples."
+    },
+    "previousTrends": "Recruitment format and role eligibility can change by country, campus, and vacancy.",
+    "resources": {
+      "practice": ["HackerRank", "GeeksforGeeks", "IndiaBIX"],
+      "officialSource": "https://www.capgemini.com/in-en/careers/"
+    },
+    "expectedSalary": "Role-, level-, and location-dependent; check the active offer details.",
+    "hiringProcess": {
+      "rounds": ["Application", "Assessment where applicable", "Technical or behavioural interviews", "Offer and verification"],
+      "note": "Stages differ across hiring campaigns."
+    },
+    "tags": ["india", "consulting", "technology", "campus-hiring"]
+  },
+  {
+    "company": "HCLTech",
+    "slug": "hcltech",
+    "eligibility": "Role-specific degree, academic, graduation-year, and experience requirements are stated in each live vacancy.",
+    "examPattern": {
+      "sections": ["Assessment or skills screening where applicable", "Technical interview", "HR or role-fit discussion"],
+      "duration": "Set by the current vacancy",
+      "mode": "Online and/or interview-based",
+      "schedule": "There is no single common test date; applications follow the live HCLTech careers listings."
+    },
+    "difficulty": "Medium",
+    "topics": ["Programming", "DSA", "OOP", "Database fundamentals", "Communication", "Role-specific technology"],
+    "roadmap": {
+      "Weeks 1-2": "Study the target job description and refresh core fundamentals.",
+      "Weeks 3-4": "Practise role-relevant problems and explain one project end to end.",
+      "Weeks 5-6": "Prepare behavioural examples and timed technical assessments."
+    },
+    "previousTrends": "The hiring process varies across campus programmes and experienced-hire positions.",
+    "resources": {
+      "practice": ["HackerRank", "LeetCode", "GeeksforGeeks"],
+      "officialSource": "https://www.hcltech.com/careers"
+    },
+    "expectedSalary": "Varies by role, level, location, and hiring programme.",
+    "hiringProcess": {
+      "rounds": ["Application", "Assessment where applicable", "Technical and role-fit interviews", "Offer checks"],
+      "note": "Use the vacancy details for the current process."
+    },
+    "tags": ["india", "technology", "campus-hiring"]
+  },
+  {
+    "company": "Google",
+    "slug": "google",
+    "eligibility": "Requirements depend on the specific role, location, degree or experience criteria, and work authorisation listed by Google.",
+    "examPattern": {
+      "sections": ["Role-related online assessment where used", "Technical or functional interviews", "Role-fit and behavioural interviews"],
+      "duration": "Varies by role",
+      "mode": "Online assessment and interviews; process varies",
+      "schedule": "Applications and interview scheduling are vacancy-specific; check Google's careers site."
+    },
+    "difficulty": "Hard",
+    "topics": ["DSA", "Problem solving", "System design for applicable roles", "Role-specific fundamentals", "Behavioural examples"],
+    "roadmap": {
+      "Weeks 1-4": "Strengthen core problem solving and role-specific knowledge.",
+      "Weeks 5-8": "Practise timed questions and system design where relevant.",
+      "Weeks 9-10": "Complete mock interviews and prepare evidence-based behavioural examples."
+    },
+    "previousTrends": "Interview format varies by team and role; use recruiter instructions as the source of truth.",
+    "resources": {
+      "practice": ["Google Tech Dev Guide", "LeetCode", "HackerRank"],
+      "books": ["The Algorithm Design Manual"],
+      "officialSource": "https://careers.google.com/"
+    },
+    "expectedSalary": "Role, level, location, and compensation components vary; see the applicable posting and offer.",
+    "hiringProcess": {
+      "rounds": ["Application review", "Assessment or recruiter screen where applicable", "Role interviews", "Hiring review and offer"],
+      "note": "Google does not use one identical interview loop for every role."
+    },
+    "tags": ["india", "technology", "product-company", "interview-preparation"]
+  },
+  {
+    "company": "Amazon",
+    "slug": "amazon",
+    "eligibility": "Degree, experience, location, and skills are specific to each Amazon vacancy.",
+    "examPattern": {
+      "sections": ["Online assessment where applicable", "Technical or functional interviews", "Leadership-principle and role-fit questions"],
+      "duration": "Varies by role",
+      "mode": "Online assessment and interviews; role-dependent",
+      "schedule": "Recruitment windows and interview dates follow individual vacancies."
+    },
+    "difficulty": "Hard",
+    "topics": ["DSA", "Problem solving", "System design where applicable", "Role-specific skills", "Leadership Principles"],
+    "roadmap": {
+      "Weeks 1-4": "Practise coding and core skills for the target role.",
+      "Weeks 5-7": "Study system design for relevant roles and prepare examples mapped to Leadership Principles.",
+      "Weeks 8-10": "Run mock interviews and refine concise STAR-format examples."
+    },
+    "previousTrends": "Interview loops and assessments vary by team and level; consult the recruiter and role-specific preparation page.",
+    "resources": {
+      "practice": ["LeetCode", "HackerRank"],
+      "officialSource": "https://www.amazon.jobs/en/locations/india"
+    },
+    "expectedSalary": "Varies by role, level, location, and compensation structure.",
+    "hiringProcess": {
+      "rounds": ["Application", "Assessment or recruiter screen where applicable", "Role interviews", "Offer"],
+      "note": "Leadership Principles may be assessed, but the format is role-specific."
+    },
+    "tags": ["india", "technology", "product-company", "interview-preparation"]
   },
   {
     "company": "Microsoft",
     "slug": "microsoft",
-    "eligibility": "Strong DSA; CGPA usually 7+; any branch",
-    "examPattern":{"sections":["OA (3 problems on Codility/Mercer)","3-4 Technical Interviews","AA (As Appropriate)"],"duration":"Multi-round","mode":"Online + Onsite"},
-    "difficulty":"Hard",
-    "topics":["DSA","OS","Networks","DBMS","System Design","Behavioral"],
-    "roadmap":{"month1-2":"LeetCode 200+","month3":"Low-level + high-level design","month4":"Mocks"},
-    "previousTrends":"Loves BFS/DFS, DP, strings.",
-    "resources":{"practice":["LeetCode","MSFT Interview Prep"]},
-    "expectedSalary":"₹22-45 LPA",
-    "hiringProcess":{"rounds":["OA","3-4 Interviews","AA Round"]},
-    "tags":["big-tech","high-paying"]
+    "eligibility": "Check the specific Microsoft role for degree, experience, location, and work-authorisation requirements.",
+    "examPattern": {
+      "sections": ["Assessment where applicable", "Technical or functional interviews", "Role-fit and behavioural questions"],
+      "duration": "Varies by role",
+      "mode": "Online and/or interviewer-led",
+      "schedule": "Vacancy-specific; use the current Microsoft careers listing and recruiter instructions."
+    },
+    "difficulty": "Hard",
+    "topics": ["DSA", "Computer science fundamentals", "System design where applicable", "Role-specific skills", "Collaboration"],
+    "roadmap": {
+      "Weeks 1-4": "Revise fundamentals and practise problems at the target role level.",
+      "Weeks 5-8": "Study design topics where relevant and prepare project deep dives.",
+      "Weeks 9-10": "Complete mock interviews and practise collaboration examples."
+    },
+    "previousTrends": "Interview format differs by job family, seniority, and location; follow the process in the invitation.",
+    "resources": {
+      "practice": ["Microsoft Learn", "LeetCode", "HackerRank"],
+      "officialSource": "https://careers.microsoft.com/v2/global/en/locations/india.html"
+    },
+    "expectedSalary": "Varies by position, level, location, and compensation structure.",
+    "hiringProcess": {
+      "rounds": ["Application review", "Assessment or screening where applicable", "Role interviews", "Offer"],
+      "note": "The sequence and interview count depend on the role."
+    },
+    "tags": ["india", "technology", "product-company", "interview-preparation"]
   }
 ]

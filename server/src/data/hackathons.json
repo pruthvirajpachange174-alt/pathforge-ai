@@ -1,68 +1,194 @@
 [
   {
-    "name":"Smart India Hackathon","slug":"sih","type":"National",
-    "organizer":"Government of India (MoE + AICTE)",
-    "website":"https://sih.gov.in",
-    "registrationPeriod":"August-September (annually)",
-    "eligibility":"All students from AICTE-approved institutions",
-    "teamSize":"6 (with 1 female mandatory)",
-    "mode":"Hybrid (idea online, finale offline)",
-    "selectionProcess":"Idea submission → College internal → Nodal Center → Grand Finale",
-    "problemStatements":["Software track (200+ PS)","Hardware track (100+ PS)"],
-    "domains":["AI","Blockchain","Healthcare","Agriculture","Smart Cities","Cybersecurity"],
-    "difficulty":"Intermediate",
-    "previousWinners":["Water quality monitoring drone","AI-based crop disease detection","Blockchain land registry"],
-    "judgingCriteria":{"innovation":25,"feasibility":25,"scalability":20,"presentation":15,"impact":15},
-    "prizePool":"₹1 lakh per team + national recognition",
-    "benefits":{"internship":"Ministry internship offers","ppo":"Some sponsors offer PPO","certificates":"Yes"},
-    "timeline":{"idea":"Aug","internal":"Sep","finale":"Dec"},
-    "tips":[
-      "Pick a niche problem statement (avoid crowded ones)",
-      "Build working prototype, not just slides",
-      "Have 1 strong presenter",
-      "Focus on 'implementable in 6 months'",
-      "Domain expert on team is a huge plus"
-    ],
-    "tags":["national","government","big-prize","beginner-friendly","AI","hardware"]
+    "name": "Smart India Hackathon",
+    "slug": "sih",
+    "type": "National",
+    "organizer": "Ministry of Education Innovation Cell and AICTE",
+    "website": "https://sih.gov.in/",
+    "registrationPeriod": "Edition dates and registration windows are announced on the official SIH portal.",
+    "eligibility": "Student teams from eligible institutions; current team composition and nomination rules are defined in the edition handbook.",
+    "teamSize": "Use the current SIH handbook; team size and composition are edition-specific.",
+    "mode": "Problem submission and finale formats are announced for each edition.",
+    "selectionProcess": "Institutional nomination and evaluation stages are set out in the current SIH handbook.",
+    "problemStatements": ["Government and public-sector problem statements published for each edition", "Software and hardware tracks where announced"],
+    "domains": ["Agriculture", "Healthcare", "Education", "Smart cities", "Environment", "Cybersecurity", "AI and data"],
+    "difficulty": "Intermediate",
+    "previousWinners": [],
+    "judgingCriteria": {
+      "note": "The current edition's evaluation rubric is published by the organizer; this catalog does not assume fixed percentage weights.",
+      "commonConsiderations": ["Problem understanding", "Innovation", "Feasibility", "Impact", "Prototype and presentation quality"]
+    },
+    "prizePool": "Edition-specific; see official SIH announcement and handbook.",
+    "benefits": {
+      "internship": "Not guaranteed; opportunities depend on the edition and participating organizations.",
+      "ppo": "Not guaranteed.",
+      "certificates": "Check the current edition rules."
+    },
+    "timeline": {
+      "status": "Check the official portal for current edition dates and registration deadlines.",
+      "source": "https://sih.gov.in/"
+    },
+    "tips": ["Read the official problem statement and constraints carefully.", "Validate the need with intended users.", "Build a working prototype and explain trade-offs.", "Confirm team, IP, and submission rules in the handbook."],
+    "tags": ["india", "national", "student", "government", "innovation"]
   },
   {
-    "name":"HackWithInfy","slug":"hack-with-infy","type":"Company",
-    "organizer":"Infosys",
-    "website":"https://infytq.onwingspan.com",
-    "registrationPeriod":"April-May",
-    "eligibility":"Pre-final year engineering students",
-    "teamSize":"1 (individual)",
-    "mode":"Online",
-    "selectionProcess":"3 coding rounds → National Finale",
-    "problemStatements":["Algorithm-heavy DSA problems"],
-    "domains":["Competitive Programming","DSA"],
-    "difficulty":"Advanced",
-    "previousWinners":["Various IIT/NIT/BITS students"],
-    "judgingCriteria":{"correctness":50,"time":30,"space":20},
-    "prizePool":"₹2.5L + ₹1.5L + ₹1L + Infosys PPI/Power Programmer role",
-    "benefits":{"internship":"Yes","ppo":"Power Programmer PPO","certificates":"Yes"},
-    "timeline":{"round1":"May","round2":"June","finale":"July"},
-    "tips":["Solve 300+ LeetCode","Master DP, graphs, segment trees","Practice on Codeforces div 2"],
-    "tags":["company","coding","individual","high-prize"]
+    "name": "HackWithInfy",
+    "slug": "hack-with-infy",
+    "type": "Company",
+    "organizer": "Infosys",
+    "website": "https://www.infosys.com/careers/",
+    "registrationPeriod": "Current edition dates and registration are published by Infosys; check official careers announcements.",
+    "eligibility": "Eligible graduation years, disciplines, and participation rules are stated in the current edition announcement.",
+    "teamSize": "Check the current edition rules.",
+    "mode": "As announced for the current edition.",
+    "selectionProcess": "Rounds, assessment rules, and finalist selection are announced for each edition.",
+    "problemStatements": ["Programming and algorithmic problem solving, as defined by the edition"],
+    "domains": ["Algorithms", "Data structures", "Competitive programming"],
+    "difficulty": "Advanced",
+    "previousWinners": [],
+    "judgingCriteria": {
+      "note": "Use the current challenge's scoring rules; no fixed score weighting is assumed here.",
+      "commonConsiderations": ["Correctness", "Efficiency", "Constraints", "Submission rules"]
+    },
+    "prizePool": "Edition-specific; verify the official announcement.",
+    "benefits": {
+      "internship": "No guarantee; any internship opportunity is subject to the current edition terms.",
+      "ppo": "Any interview or job benefit is governed by the edition terms and hiring eligibility.",
+      "certificates": "Check the current edition announcement."
+    },
+    "timeline": {
+      "status": "Dates are edition-specific; check official Infosys career updates.",
+      "source": "https://www.infosys.com/careers/"
+    },
+    "tips": ["Practise timed problem solving.", "Review data structures and algorithmic complexity.", "Read constraints before choosing an approach.", "Use only the official current contest rules for preparation."],
+    "tags": ["india", "company", "coding", "competitive-programming"]
   },
   {
-    "name":"Google Solution Challenge","slug":"google-solution-challenge","type":"Company",
-    "organizer":"Google Developers",
-    "website":"https://developers.google.com/community/gdsc-solution-challenge",
-    "registrationPeriod":"January-March",
-    "eligibility":"GDSC (Google Developer Student Club) members",
-    "teamSize":"1-4",
-    "mode":"Online",
-    "selectionProcess":"Submission → Top 100 → Top 10 → Top 3",
-    "problemStatements":["Solve one of the UN 17 Sustainable Development Goals using Google tech"],
-    "domains":["AI","Cloud","Android","Web","Flutter"],
-    "difficulty":"Intermediate",
-    "previousWinners":["Accessibility apps","Climate tracking","Health apps"],
-    "judgingCriteria":{"impact":30,"execution":30,"scalability":20,"presentation":20},
-    "prizePool":"$3000 cash + swag + mentorship + Google spotlight",
-    "benefits":{"internship":"Referrals","ppo":"No direct","certificates":"Yes"},
-    "timeline":{"open":"Jan","submit":"Mar","top100":"Apr","top10":"Jun"},
-    "tips":["Use multiple Google technologies","Solve REAL UN SDG problem","Great demo video is critical"],
-    "tags":["company","google","international","sustainability"]
+    "name": "TCS CodeVita",
+    "slug": "tcs-codevita",
+    "type": "Company",
+    "organizer": "Tata Consultancy Services",
+    "website": "https://www.tcscodevita.com/",
+    "registrationPeriod": "Check the official contest portal for the current season and registration dates.",
+    "eligibility": "Participation eligibility, graduation years, and country rules are defined on the current contest portal.",
+    "teamSize": "Check the current season rules.",
+    "mode": "Online contest; verify the current season format.",
+    "selectionProcess": "Contest rounds and advancement rules are published for each season.",
+    "problemStatements": ["Programming contest problems released during the season"],
+    "domains": ["Algorithms", "Data structures", "Problem solving"],
+    "difficulty": "Intermediate",
+    "previousWinners": [],
+    "judgingCriteria": {
+      "note": "The contest portal defines scoring, test cases, and tie-break rules for each season.",
+      "commonConsiderations": ["Correctness", "Execution constraints", "Submission compliance"]
+    },
+    "prizePool": "Season-specific; see the official contest page.",
+    "benefits": {
+      "internship": "Not guaranteed; see current season terms.",
+      "ppo": "Not guaranteed; see current season terms.",
+      "certificates": "Check the official season rules."
+    },
+    "timeline": {
+      "status": "Season dates are announced on the contest portal.",
+      "source": "https://www.tcscodevita.com/"
+    },
+    "tips": ["Practise more than one programming language only if permitted by current rules.", "Test edge cases and complexity.", "Read contest-specific input/output requirements.", "Use the official portal for deadlines and terms."],
+    "tags": ["india", "company", "coding", "contest"]
+  },
+  {
+    "name": "Flipkart GRiD",
+    "slug": "flipkart-grid",
+    "type": "Company",
+    "organizer": "Flipkart",
+    "website": "https://www.flipkartcareers.com/",
+    "registrationPeriod": "Check Flipkart's official careers and challenge announcements for the current edition.",
+    "eligibility": "Eligible degree programmes, graduation years, and team requirements are edition-specific.",
+    "teamSize": "Check the current edition announcement.",
+    "mode": "Challenge format is announced for each edition.",
+    "selectionProcess": "Stages and shortlisting rules are published in the current challenge brief.",
+    "problemStatements": ["Technology, product, or business problem statements as published for the edition"],
+    "domains": ["Software engineering", "Product", "Data", "Design"],
+    "difficulty": "Intermediate",
+    "previousWinners": [],
+    "judgingCriteria": {
+      "note": "The current challenge brief defines evaluation criteria and scoring.",
+      "commonConsiderations": ["Problem fit", "Execution", "Technical quality", "Communication"]
+    },
+    "prizePool": "Edition-specific; check the official challenge terms.",
+    "benefits": {
+      "internship": "Not guaranteed; subject to current edition rules and selection.",
+      "ppo": "Not guaranteed.",
+      "certificates": "Check current edition terms."
+    },
+    "timeline": {
+      "status": "Edition dates are announced by Flipkart.",
+      "source": "https://www.flipkartcareers.com/"
+    },
+    "tips": ["Read the challenge brief before selecting an idea.", "Show a functional prototype and measurable user value.", "Document architecture and trade-offs.", "Confirm participation rules and deadlines."],
+    "tags": ["india", "company", "technology", "product"]
+  },
+  {
+    "name": "Amazon ML Challenge",
+    "slug": "amazon-ml-challenge",
+    "type": "Company",
+    "organizer": "Amazon",
+    "website": "https://www.amazon.science/",
+    "registrationPeriod": "Challenge dates and registration are posted on the official challenge platform when an edition is open.",
+    "eligibility": "Eligibility, team size, and participation terms vary by challenge edition.",
+    "teamSize": "Check the current challenge rules.",
+    "mode": "Online challenge format as announced for the edition.",
+    "selectionProcess": "Submission and evaluation process are defined by the current challenge rules.",
+    "problemStatements": ["Machine-learning tasks and datasets as supplied by the challenge organizer"],
+    "domains": ["Machine learning", "Natural language processing", "Computer vision", "Data science"],
+    "difficulty": "Advanced",
+    "previousWinners": [],
+    "judgingCriteria": {
+      "note": "Metrics, data rules, and scoring are specific to the challenge dataset and edition.",
+      "commonConsiderations": ["Metric performance", "Reproducibility", "Data-use compliance"]
+    },
+    "prizePool": "Challenge-specific; check current official terms.",
+    "benefits": {
+      "internship": "Not guaranteed.",
+      "ppo": "Not guaranteed.",
+      "certificates": "Check the challenge terms."
+    },
+    "timeline": {
+      "status": "No recurring dates are asserted; use the current official challenge listing.",
+      "source": "https://www.amazon.science/"
+    },
+    "tips": ["Establish a validation baseline.", "Prevent data leakage.", "Track experiments and reproducibility.", "Read the dataset licence and submission terms."],
+    "tags": ["india", "company", "machine-learning", "data-science"]
+  },
+  {
+    "name": "Google Solution Challenge",
+    "slug": "google-solution-challenge",
+    "type": "Company",
+    "organizer": "Google Developer Groups on Campus",
+    "website": "https://developers.google.com/community/gdsc-solution-challenge",
+    "registrationPeriod": "A new edition's availability and dates must be confirmed on the official Google Developer page.",
+    "eligibility": "Membership, team, technology, and submission requirements are defined by the current edition.",
+    "teamSize": "Check current edition rules.",
+    "mode": "Online submissions unless the current edition says otherwise.",
+    "selectionProcess": "Submission and judging stages are defined by the current edition rules.",
+    "problemStatements": ["Build a technology solution addressing a challenge selected by the current edition."],
+    "domains": ["Web", "Mobile", "Cloud", "AI", "Accessibility", "Sustainable development"],
+    "difficulty": "Intermediate",
+    "previousWinners": [],
+    "judgingCriteria": {
+      "note": "Evaluation criteria and any SDG requirements must be checked in the current edition rules.",
+      "commonConsiderations": ["Problem relevance", "Solution quality", "User impact", "Demo and documentation"]
+    },
+    "prizePool": "Edition-specific; no prize is guaranteed unless stated in current official terms.",
+    "benefits": {
+      "internship": "Not guaranteed.",
+      "ppo": "Not guaranteed.",
+      "certificates": "Check current edition terms."
+    },
+    "timeline": {
+      "status": "Verify whether a new edition is open and its dates on the official page.",
+      "source": "https://developers.google.com/community/gdsc-solution-challenge"
+    },
+    "tips": ["Talk to intended users before building.", "Keep the solution aligned to the current prompt.", "Submit a working demo and clear documentation.", "Check rules for eligible technologies and team members."],
+    "tags": ["international", "student", "technology", "social-impact"]
   }
 ]

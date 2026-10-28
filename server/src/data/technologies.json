@@ -64,5 +64,115 @@
     "companies":["AWS","Google Cloud","Microsoft","Netflix","Airbnb"],
     "futureDemand":"Very High — every company migrating to cloud.",
     "color":"#f59e0b"
+  },
+  {
+    "name":"Cybersecurity","slug":"cybersecurity","category":"Security",
+    "description":"Protect systems, networks, applications, and data through prevention, detection, response, and secure engineering.",
+    "skills":["Networking","Linux","Threat modeling","Identity and access management","Secure coding","Incident response"],
+    "languages":["Python","Bash","SQL","JavaScript"],
+    "roadmap":{
+      "phase1":["Networking and Linux fundamentals","Security principles and ethics","Basic scripting"],
+      "phase2":["Web security fundamentals","Identity and access controls","Vulnerability management"],
+      "phase3":["Threat detection","Incident response","Cloud security basics"],
+      "phase4":["Choose a defensive specialty","Build a legal home lab","Document projects and findings"]
+    },
+    "projects":{
+      "beginner":["Security headers checker","Log parsing dashboard"],
+      "intermediate":["Threat-model a demo application","Home-lab alert rules"],
+      "advanced":["Secure CI pipeline","Cloud configuration audit in a test account"]
+    },
+    "certifications":["CompTIA Security+ (where relevant)","ISC2 Certified in Cybersecurity (check current programme terms)"],
+    "salary":"Varies by role, experience, location, and employer; compare current India job postings.",
+    "companies":["Indian banks","IT services firms","Product companies","Security consultancies"],
+    "futureDemand":"Security work spans software, cloud, identity, and incident response. Demand and job requirements vary by specialization.",
+    "color":"#ef4444"
+  },
+  {
+    "name":"Data Science and Analytics","slug":"data-science","category":"Data",
+    "description":"Use data, statistics, and computing to answer questions, build measurements, and support decisions.",
+    "skills":["Statistics","SQL","Data cleaning","Visualization","Experimental reasoning","Model evaluation"],
+    "languages":["Python","SQL","R"],
+    "roadmap":{
+      "phase1":["Statistics and spreadsheet fluency","Python or R fundamentals","SQL basics"],
+      "phase2":["Data cleaning and exploratory analysis","Visualization","Reproducible notebooks"],
+      "phase3":["Modeling and evaluation","Experiment design","Communicating uncertainty"],
+      "phase4":["Build a domain-focused portfolio","Deploy a small analysis product","Document limitations"]
+    },
+    "projects":{
+      "beginner":["Public dataset analysis","SQL reporting project"],
+      "intermediate":["Customer churn analysis with careful evaluation","Time-series dashboard"],
+      "advanced":["End-to-end data product with monitoring","Reproducible research pipeline"]
+    },
+    "certifications":["Google Data Analytics Professional Certificate (check current syllabus)","Microsoft Power BI Data Analyst (PL-300)"],
+    "salary":"Varies by role, experience, location, and employer; compare current India job postings.",
+    "companies":["Analytics consultancies","Banks","E-commerce companies","Healthcare and public-sector organisations"],
+    "futureDemand":"Data skills are used across industries; demand depends on domain knowledge, analytical depth, and communication.",
+    "color":"#06b6d4"
+  },
+  {
+    "name":"DevOps and Site Reliability","slug":"devops-sre","category":"Infrastructure",
+    "description":"Automate software delivery and operate reliable systems using infrastructure, observability, and incident practices.",
+    "skills":["Linux","Networking","CI/CD","Containers","Cloud fundamentals","Monitoring","Infrastructure as code"],
+    "languages":["Bash","Python","Go","YAML"],
+    "roadmap":{
+      "phase1":["Linux and networking foundations","Git and shell scripting","Build and test a web service"],
+      "phase2":["CI pipelines","Containers","Deployment fundamentals"],
+      "phase3":["Cloud and infrastructure as code","Monitoring and alerting","Reliability concepts"],
+      "phase4":["Operate a project with a runbook","Practice incident reviews","Improve cost and resilience"]
+    },
+    "projects":{
+      "beginner":["Automated test-and-build pipeline","Dockerized web service"],
+      "intermediate":["Deploy service with infrastructure as code","Metrics and alert dashboard"],
+      "advanced":["Resilience-tested service","Blue/green deployment with rollback"]
+    },
+    "certifications":["AWS Certified Cloud Practitioner (optional foundation)","Certified Kubernetes Administrator (for relevant roles)"],
+    "salary":"Varies by role, experience, location, and employer; compare current India job postings.",
+    "companies":["Cloud providers","IT services firms","Product companies","SaaS organisations"],
+    "futureDemand":"Operational automation and reliability remain important as systems scale; requirements vary by platform and team.",
+    "color":"#f59e0b"
+  },
+  {
+    "name":"Mobile App Development","slug":"mobile-development","category":"Application Development",
+    "description":"Design, build, test, and maintain applications for Android and iOS devices.",
+    "skills":["UI design fundamentals","Mobile platform APIs","Networking","Local storage","Accessibility","Testing"],
+    "languages":["Kotlin","Swift","Dart","JavaScript"],
+    "roadmap":{
+      "phase1":["Choose native Android, native iOS, or cross-platform","Learn language and tooling basics","Build simple screens"],
+      "phase2":["Navigation and state","Networking and persistence","Accessibility and responsive layouts"],
+      "phase3":["Testing","Security and privacy fundamentals","App performance"],
+      "phase4":["Publish a portfolio app","Add crash and usage monitoring","Maintain release notes"]
+    },
+    "projects":{
+      "beginner":["Campus timetable","Habit tracker"],
+      "intermediate":["Offline-first study planner","Accessible event discovery app"],
+      "advanced":["Realtime collaboration app","Secure mobile client with backend"]
+    },
+    "certifications":["Platform-specific training is optional; verify current vendor programmes."],
+    "salary":"Varies by platform, role, experience, location, and employer; compare current India job postings.",
+    "companies":["Indian fintech firms","E-commerce companies","Consumer app teams","Mobile consultancies"],
+    "futureDemand":"Mobile expertise remains relevant for consumer and enterprise applications; platform choice depends on the product.",
+    "color":"#8b5cf6"
+  },
+  {
+    "name":"Blockchain and Distributed Applications","slug":"blockchain","category":"Emerging Technology",
+    "description":"Build and evaluate applications using distributed ledgers, cryptography, and smart contracts.",
+    "skills":["Cryptography fundamentals","Distributed systems","Smart-contract security","Testing","Threat modeling","Economic assumptions"],
+    "languages":["Solidity","Rust","Go","TypeScript"],
+    "roadmap":{
+      "phase1":["Networking and cryptography basics","Understand consensus and trust assumptions","Learn a general-purpose language"],
+      "phase2":["Study one blockchain platform","Write and test simple contracts","Learn wallet and transaction flows"],
+      "phase3":["Smart-contract security","Auditing and test techniques","Build a small end-to-end demo"],
+      "phase4":["Review legal and operational constraints","Document threat model","Deploy only to test networks while learning"]
+    },
+    "projects":{
+      "beginner":["Local test-network token demo","Block explorer for sample data"],
+      "intermediate":["Escrow contract with tests","Supply-chain proof-of-concept"],
+      "advanced":["Security-reviewed testnet application","Cross-chain risk analysis prototype"]
+    },
+    "certifications":["No single certification is required; evaluate curricula and provider claims carefully."],
+    "salary":"Highly role- and market-dependent; do not treat advertised token compensation as guaranteed salary.",
+    "companies":["Web3 product teams","Security auditors","Distributed systems teams","Research groups"],
+    "futureDemand":"A specialized field with evolving adoption and regulation; build transferable security and distributed-systems skills.",
+    "color":"#f97316"
   }
 ]

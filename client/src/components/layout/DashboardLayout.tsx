@@ -1,3 +1,4 @@
+/** Renders the Dashboard Layout interface component. */
 import { Sidebar } from './Sidebar';
 import { Topbar } from './Topbar';
 

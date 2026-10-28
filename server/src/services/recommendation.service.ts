@@ -1,3 +1,4 @@
+/** Provides backend functionality for Recommendation Service. */
 import { prisma } from '../config/db';
 
 export async function recommendHackathons(profile: {

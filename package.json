@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"pnpm --filter api dev\" \"pnpm --filter web dev\"",
-    "build": "pnpm --filter api build && pnpm --filter web build",
-    "db:migrate": "pnpm --filter api prisma migrate dev",
-    "db:seed": "pnpm --filter api prisma db seed",
-    "db:studio": "pnpm --filter api prisma studio",
+    "dev": "concurrently \"pnpm --filter pathforge-client dev\" \"pnpm --filter pathforge-server dev\"",
+    "build": "pnpm --filter pathforge-client build && pnpm --filter pathforge-server build",
+    "db:migrate": "pnpm --filter pathforge-server prisma:migrate",
+    "db:migrate:deploy": "pnpm --filter pathforge-server prisma:migrate:deploy",
+    "db:seed": "pnpm --filter pathforge-server seed",
+    "db:studio": "pnpm --filter pathforge-server prisma:studio",
     "lint": "pnpm -r lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
   },
